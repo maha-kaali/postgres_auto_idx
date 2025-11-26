@@ -13,6 +13,7 @@
  *-------------------------------------------------------------------------
  */
 #include "postgres.h"
+#include "optimizer/auto_index_stats.h"
 
 #include "access/clog.h"
 #include "access/commit_ts.h"
@@ -207,6 +208,7 @@ CreateSharedMemoryAndSemaphores(void)
 
 	/* Compute the size of the shared-memory block */
 	size = CalculateShmemSize(&numSemas);
+	size = add_size(size, sizeof(AutoIndexShmemState));
 	elog(DEBUG3, "invoking IpcMemoryCreate(size=%zu)", size);
 
 	/*
@@ -260,6 +262,8 @@ CreateSharedMemoryAndSemaphores(void)
 	 */
 	if (shmem_startup_hook)
 		shmem_startup_hook();
+
+	AutoIndexShmemInit();
 }
 
 /*

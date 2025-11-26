@@ -26,6 +26,8 @@ OBJS = \
 	relnode.o \
 	restrictinfo.o \
 	tlist.o \
-	var.o
+	var.o \
+	auto_index_stats.o \
+	auto_index_ml.o
 
 include $(top_srcdir)/src/backend/common.mk

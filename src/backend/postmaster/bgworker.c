@@ -34,6 +34,8 @@
 #include "utils/ps_status.h"
 #include "utils/timeout.h"
 
+extern void AutoIndexWorkerMain(Datum main_arg);
+
 /*
  * The postmaster's list of registered background workers, in private memory.
  */
@@ -132,7 +134,10 @@ static const struct
 	},
 	{
 		"TablesyncWorkerMain", TablesyncWorkerMain
-	}
+	},
+    {
+        "AutoIndexWorkerMain", AutoIndexWorkerMain
+    }
 };
 
 /* Private functions. */

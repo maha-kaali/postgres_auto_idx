@@ -32,6 +32,8 @@
 #include "executor/executor.h"
 #include "executor/nodeSeqscan.h"
 #include "utils/rel.h"
+#include "optimizer/auto_index_stats.h"
+#include "optimizer/clauses.h"
 
 static TupleTableSlot *SeqNext(SeqScanState *node);
 
@@ -171,6 +173,48 @@ ExecInitSeqScan(SeqScan *node, EState *estate, int eflags)
 	scanstate->ss.ps.qual =
 		ExecInitQual(node->scan.plan.qual, (PlanState *) scanstate);
 
+
+		// if there are any conditions 
+	if (node->scan.plan.qual) {
+
+		// we will have multiple attributes to support composite index
+		List *candidate_attrs = NIL;
+
+		// we will be iterating over all the conditions
+		List *clauses = node->scan.plan.qual;
+		ListCell *lc;
+
+		foreach(lc, clauses) {
+			Expr *clause = (Expr *) lfirst(lc);
+			if (IsA(clause, OpExpr)) { // for operator expressions
+				OpExpr *op = (OpExpr *) clause;
+				List *args = op->args;
+				if (list_length(args) == 2) { // (support only two args like age = 30, not 'age BETWEEN 20 AND 30')
+					
+					// can be a variable or a constant, we don't know
+					Node *left = (Node *) linitial(args);
+
+					Node *right = (Node *) lsecond(args);
+					Var *var = NULL;
+					
+					// whichever is var
+					if (IsA(left, Var)) var = (Var *) left;
+					else if (IsA(right, Var)) var = (Var *) right;
+
+					if (var) {
+						// add this to candidate attrs
+						candidate_attrs = lappend_int(candidate_attrs, var->varattno);
+					}
+				}
+			}
+		}
+
+		if (candidate_attrs != NIL) {
+			// sends to shared memory and increment freq
+			TrackIndexCandidate(scanstate->ss.ss_currentRelation->rd_id, candidate_attrs);
+		}
+	}
+
 	return scanstate;
 }
 
@@ -195,6 +239,10 @@ ExecEndSeqScan(SeqScanState *node)
 	 */
 	if (scanDesc != NULL)
 		table_endscan(scanDesc);
+
+	if (node->ss.ss_currentRelation)
+		elog(LOG, "SeqScan finished on relation %s",
+			 RelationGetRelationName(node->ss.ss_currentRelation));
 }
 
 /* ----------------------------------------------------------------

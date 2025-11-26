@@ -482,6 +482,8 @@ int			postmaster_alive_fds[2] = {-1, -1};
 HANDLE		PostmasterHandle;
 #endif
 
+void AutoIndexWorkerMain(Datum main_arg);
+
 /*
  * Postmaster main entry point
  */
@@ -527,6 +529,17 @@ PostmasterMain(int argc, char *argv[])
 											  "Postmaster",
 											  ALLOCSET_DEFAULT_SIZES);
 	MemoryContextSwitchTo(PostmasterContext);
+
+    /* Register Auto Index Worker */
+    MemSet(&worker, 0, sizeof(BackgroundWorker));
+    worker.bgw_flags = BGWORKER_SHMEM_ACCESS | BGWORKER_BACKEND_DATABASE_CONNECTION;
+    worker.bgw_start_time = BgWorkerStart_RecoveryFinished;
+    worker.bgw_restart_time = 10; 
+    snprintf(worker.bgw_library_name, BGW_MAXLEN, "postgres");
+    snprintf(worker.bgw_function_name, BGW_MAXLEN, "AutoIndexWorkerMain");
+    snprintf(worker.bgw_name, BGW_MAXLEN, "Auto Index Worker");
+    snprintf(worker.bgw_type, BGW_MAXLEN, "auto_index_worker");
+    RegisterBackgroundWorker(&worker);
 
 	/* Initialize paths to installation files */
 	getInstallationPaths(argv[0]);
