@@ -90,25 +90,39 @@ void AutoIndexWorkerMain(Datum main_arg) {
         PushActiveSnapshot(GetTransactionSnapshot());
         SPI_connect();
 
-        // scan shared memory
+        /* scan shared memory */
         for (i=0; i < AutoIndexState->count; i++) {
             IndexCandidate *cand = &AutoIndexState->candidates[i];
-            
-            // optimisation 1
-            // if no ideal freq set, set it
+            double score;
+            double creation_threshold = 10.0;
+
+            /* if no ideal freq set, set it */
             if (!cand->freq_set) {
                 double rows = get_relation_rows(cand->relid);
-                cand->ideal_freq = ceil((10 - log(rows)) / 10.0); // threshold=10 [check]
+                cand->ideal_freq = fmax(50 - (int)(2.5 * log(rows)), 5);                
                 cand->freq_set = true;
             }
 
-            // FAST SKIP 
+            /* Check for staleness: if frequency unchanged, increment stale counter */
+            if (cand->frequency == cand->last_frequency) {
+                cand->stale_cycles++;
+                if (cand->stale_cycles >= STALE_CYCLE_THRESHOLD) {
+                    AUTO_INDEX_LOG("Worker: candidate[%d] STALE for %d cycles, removing (relid=%u)",
+                                  i, cand->stale_cycles, cand->relid);
+                    /* RemoveIndexCandidate handles its own locking */
+                    RemoveIndexCandidate(i);
+                    i--;  /* adjust since array shifted */
+                    continue;
+                }
+            } else {
+                /* frequency changed, reset stale counter */
+                cand->stale_cycles = 0;
+                cand->last_frequency = cand->frequency;
+            }
+
+            /* FAST SKIP: below ideal frequency threshold */
             if (cand->frequency < cand->ideal_freq)
                 continue;
-
-
-            double score;
-            double creation_threshold = 10.0;
 
             if (cand->frequency == 0) {
                 AUTO_INDEX_LOG_DEBUG("Worker: candidate[%d] skipped (frequency=0)", i);
@@ -166,10 +180,8 @@ void AutoIndexWorkerMain(Datum main_arg) {
 
                     AUTO_INDEX_LOG("Worker: INDEX CREATED successfully: %s", buf.data);
 
-                    /* Remove candidate from shared memory instead of resetting frequency */
-                    SpinLockAcquire(&AutoIndexState->global_lock);
+                    /* Remove candidate from shared memory (handles its own locking) */
                     RemoveIndexCandidate(i);
-                    SpinLockRelease(&AutoIndexState->global_lock);
 
                     AUTO_INDEX_LOG("Worker: candidate[%d] removed from candidate list", i);
 

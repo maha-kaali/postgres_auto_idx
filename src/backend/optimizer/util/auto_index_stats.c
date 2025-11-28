@@ -148,10 +148,16 @@ RemoveIndexCandidate(int index)
 {
     int i;
 
+    if (AutoIndexState == NULL)
+        return;
+
     SpinLockAcquire(&AutoIndexState->global_lock);
 
-    if (AutoIndexState == NULL || index < 0 || index >= AutoIndexState->count)
+    if (index < 0 || index >= AutoIndexState->count)
+    {
+        SpinLockRelease(&AutoIndexState->global_lock);
         return;
+    }
 
     AUTO_INDEX_LOG("RemoveIndexCandidate: removing candidate[%d], relid=%u",
                    index, AutoIndexState->candidates[index].relid);
@@ -186,11 +192,13 @@ PrintCandidateStateTable(void)
         return;
     }
 
-    elog(LOG, "AutoIndex: ========== CANDIDATE STATE TABLE ==========");
+    SpinLockAcquire(&AutoIndexState->global_lock);
+
+    elog(LOG, "AutoIndex: =============== CANDIDATE STATE TABLE ===============");
     elog(LOG, "AutoIndex: Total candidates: %d / %d", AutoIndexState->count, MAX_CANDIDATES);
-    elog(LOG, "AutoIndex: %-4s | %-10s | %-6s | %-8s | %-8s | %s",
-         "Idx", "RelOid", "Freq", "IdealF", "FreqSet", "Attrs");
-    elog(LOG, "AutoIndex: -----|------------|--------|----------|----------|--------");
+    elog(LOG, "AutoIndex: %-3s | %-8s | %-5s | %-5s | %-6s | %s",
+         "Idx", "RelOid", "Freq", "Stale", "IdealF", "Attrs");
+    elog(LOG, "AutoIndex: ----|----------|-------|-------|--------|--------");
 
     for (i = 0; i < AutoIndexState->count; i++) {
         IndexCandidate *cand = &AutoIndexState->candidates[i];
@@ -202,19 +210,21 @@ PrintCandidateStateTable(void)
                 appendStringInfoString(&attr_str, ",");
             appendStringInfo(&attr_str, "%d", cand->attrs[j]);
         }
-
-        elog(LOG, "AutoIndex: %-4d | %-10u | %-6d | %-8d | %-8s | [%s]",
+        
+        elog(LOG, "AutoIndex: %-3d | %-8u | %-5d | %-5d | %-6d | [%s]",
              i,
              cand->relid,
              cand->frequency,
+             cand->stale_cycles,
              cand->ideal_freq,
-             cand->freq_set ? "true" : "false",
              attr_str.data);
 
         pfree(attr_str.data);
     }
 
-    elog(LOG, "AutoIndex: ==============================================");
+    elog(LOG, "AutoIndex: ====================================================");
+
+    SpinLockRelease(&AutoIndexState->global_lock);
 }
 
 void AutoIndexShmemInit(void) {

@@ -41,40 +41,73 @@ double CalculateIndexScore(Oid relid, AttrNumber *attrs, int num_attrs, int freq
     table_size_score = log(rows > 0 ? rows : 1);
     AUTO_INDEX_LOG("CalculateIndexScore: table_size_score=%.4f (log of %.0f rows)", table_size_score, rows);
 
-    // selectivity
-    // we check pg_statistic. If distinct values are low (2 for Gender), selectivity is poor.
-    // for composite indexes, we only penalize if ALL columns are low selectivity.
+    /*
+     * IMPROVED SELECTIVITY MODEL (The "Tipping Point" Logic)
+     * For composite indexes, we only penalize if ALL columns are low selectivity.
+     */
     bool has_selective_column = false;
     double current_penalty = 0;
 
-    for (i=0; i<num_attrs; i++) {
+    for (i = 0; i < num_attrs; i++) {
         HeapTuple statTup = SearchSysCache3(STATRELATTINH,
                                             ObjectIdGetDatum(relid),
                                             Int16GetDatum(attrs[i]),
                                             BoolGetDatum(false));
         if (HeapTupleIsValid(statTup)) {
-             Form_pg_statistic stats = (Form_pg_statistic) GETSTRUCT(statTup);
+            Form_pg_statistic stats = (Form_pg_statistic) GETSTRUCT(statTup);
+            double num_distinct;
+            double selectivity;
 
-             // stadistinct < 0 means percentage . > 0 means absolute count.
+            AUTO_INDEX_LOG("CalculateIndexScore: attr[%d]=%d stadistinct=%.4f",
+                          i, attrs[i], stats->stadistinct);
 
-             AUTO_INDEX_LOG("CalculateIndexScore: attr[%d]=%d stadistinct=%.4f",
-                           i, attrs[i], stats->stadistinct);
+            /*
+             * Get the actual Number of Distinct Values.
+             * Postgres stores distinct count weirdly:
+             * > 0 means absolute count (e.g., 5 distinct values).
+             * < 0 means ratio (e.g., -0.1 means 10% of rows are distinct).
+             */
+            if (stats->stadistinct < 0) {
+                /* It's a ratio (common for large tables) */
+                num_distinct = rows * (-stats->stadistinct);
+            } else {
+                /* It's an absolute count */
+                num_distinct = stats->stadistinct;
+            }
 
-            // very basic so changing
-            //  if (stats->stadistinct > 0 && stats->stadistinct < 5 && rows >= 1000) {
-            //      current_penalty += 100; 
-             double sel = stats->stadistinct / (double)rows;
+            /* Sanity check to avoid division by zero */
+            if (num_distinct < 1.0) num_distinct = 1.0;
 
-             if (sel < 0.01){           // less than 1% distinct
-                 current_penalty += 100;    
-        
-                 AUTO_INDEX_LOG("CalculateIndexScore: attr[%d] LOW selectivity , penalty+=100", i);
-             } else {
-                 has_selective_column = true; 
+            /*
+             * Calculate Selectivity (Probability of a row matching).
+             * Example: Gender (2 distinct) -> Selectivity = 0.5 (50% of rows match)
+             * Example: UUID (Unique) -> Selectivity = 0.000...1 (1 row matches)
+             */
+            selectivity = 1.0 / num_distinct;
 
-                 AUTO_INDEX_LOG("CalculateIndexScore: attr[%d] GOOD selectivity", i);
-             }
-             ReleaseSysCache(statTup);
+            /*
+             * Apply Penalties based on Physics.
+             * If an index fetches > 20% of table, the planner usually ignores it.
+             * So we should heavily penalize it.
+             */
+            if (selectivity > 0.20) {
+                /* Matches >20% of rows (e.g. Gender, Boolean flags).
+                 * This index will likely NEVER be used by the planner. */
+                current_penalty += 1000.0;
+                AUTO_INDEX_LOG("CalculateIndexScore: attr[%d] selectivity %.2f > 20%% (useless) -> Penalty 1000", i, selectivity);
+            } else if (selectivity > 0.05) {
+                /* Matches 5% - 20% of rows.
+                 * Useful ONLY if the table is massive, otherwise SeqScan is often faster.
+                 * Small penalty. */
+                current_penalty += 50.0;
+                AUTO_INDEX_LOG("CalculateIndexScore: attr[%d] selectivity %.2f (mediocre) -> Penalty 50", i, selectivity);
+            } else {
+                /* Matches < 5% of rows. This is "Golden". No penalty. */
+                has_selective_column = true;
+                AUTO_INDEX_LOG("CalculateIndexScore: attr[%d] selectivity %.2f (excellent) -> No Penalty", i, selectivity);
+            }
+
+            ReleaseSysCache(statTup);
         } else {
             /* if no stats available, be optimistic */
             has_selective_column = true;
