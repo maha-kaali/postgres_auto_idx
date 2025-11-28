@@ -33,8 +33,8 @@ auto_index_sigterm(SIGNAL_ARGS)
 void AutoIndexWorkerMain(Datum main_arg) {
     int cycle_count = 0;
 
-    // connect to database "postgres" for now.
-    BackgroundWorkerInitializeConnection("postgres", NULL, 0);
+    // connect to database "testdb" - TODO: make this configurable via GUC
+    BackgroundWorkerInitializeConnection("testdb", NULL, 0);
 
     // set up signal handlers
     pqsignal(SIGTERM, auto_index_sigterm);
@@ -89,6 +89,20 @@ void AutoIndexWorkerMain(Datum main_arg) {
         // scan shared memory
         for (i=0; i < AutoIndexState->count; i++) {
             IndexCandidate *cand = &AutoIndexState->candidates[i];
+            
+            // optimisation 1
+            // if no ideal freq set, set it
+            if (!cand->freq_set) {
+                double rows = get_relation_rows(cand->relid);
+                cand->ideal_freq = ceil((10 - log(rows)) / 10.0); // threshold=10 use your real logic
+                cand->freq_set = true;
+            }
+
+            // FAST SKIP 
+            if (cand->frequency < cand->ideal_freq)
+                continue;
+
+
             double score;
             double creation_threshold = 10.0;
 
@@ -119,7 +133,9 @@ void AutoIndexWorkerMain(Datum main_arg) {
                     initStringInfo(&buf);
                     initStringInfo(&col_list);
 
-                    appendStringInfo(&buf, "CREATE INDEX auto_idx_%s", relname);
+                    // appendStringInfo(&buf, "CREATE INDEX auto_idx_%s", relname);
+                    appendStringInfo(&buf, "CREATE INDEX CONCURRENTLY auto_idx_%s", relname);
+
 
                     for (j=0; j<cand->num_attrs; j++) {
                         char *colname = get_attname(cand->relid, cand->attrs[j], false);

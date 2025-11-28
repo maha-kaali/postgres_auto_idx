@@ -6,8 +6,8 @@
 
 AutoIndexShmemState *AutoIndexState = NULL;
 
-/* GUC variable for log toggle - default OFF */
-bool auto_index_log_enabled = false;
+/* GUC variable for log toggle - default ON for debugging */
+bool auto_index_log_enabled = true;
 
 /* Define GUC for auto_index.log */
 void
@@ -17,8 +17,8 @@ DefineAutoIndexGUCs(void)
                              "Enable verbose logging for autonomous indexing",
                              NULL,
                              &auto_index_log_enabled,
-                             false,  /* default value */
-                             PGC_USERSET,
+                             true,  /* default value - enabled by default for debugging */
+                             PGC_SUSET,  /* superuser can change, applies to all sessions including bgworker */
                              0,
                              NULL,
                              NULL,

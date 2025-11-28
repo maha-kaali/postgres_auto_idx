@@ -54,19 +54,24 @@ double CalculateIndexScore(Oid relid, AttrNumber *attrs, int num_attrs, int freq
                                             BoolGetDatum(false));
         if (HeapTupleIsValid(statTup)) {
              Form_pg_statistic stats = (Form_pg_statistic) GETSTRUCT(statTup);
-             // stadistinct < 0 means percentage (e.g. -1 = unique). > 0 means absolute count.
+
+             // stadistinct < 0 means percentage. > 0 means absolute count.
+
              AUTO_INDEX_LOG("CalculateIndexScore: attr[%d]=%d stadistinct=%.4f",
                            i, attrs[i], stats->stadistinct);
+
              if (stats->stadistinct > 0 && stats->stadistinct < 5 && rows >= 1000) {
-                 current_penalty += 100; // accumulate penalty
+                 current_penalty += 100; 
+
                  AUTO_INDEX_LOG("CalculateIndexScore: attr[%d] LOW selectivity (distinct<5), penalty+=100", i);
              } else {
-                 has_selective_column = true; // found a good column!
+                 has_selective_column = true; 
+
                  AUTO_INDEX_LOG("CalculateIndexScore: attr[%d] GOOD selectivity", i);
              }
              ReleaseSysCache(statTup);
         } else {
-            // if no stats, assume it might be selective (optimistic)
+            // if no stats available, be optimistic
             has_selective_column = true;
             AUTO_INDEX_LOG("CalculateIndexScore: attr[%d]=%d NO stats found, assuming selective", i, attrs[i]);
         }
@@ -81,6 +86,7 @@ double CalculateIndexScore(Oid relid, AttrNumber *attrs, int num_attrs, int freq
 
     // frequency
     scan_frequency_score = (double) frequency * 10.0;
+
     AUTO_INDEX_LOG("CalculateIndexScore: scan_frequency_score=%.4f (frequency=%d * 10)",
                    scan_frequency_score, frequency);
 
