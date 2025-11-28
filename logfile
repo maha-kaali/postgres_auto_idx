@@ -4739,3 +4739,802 @@ TRAP: failed Assert("ct->ct_magic == CT_MAGIC"), File: "catcache.c", Line: 1636,
 2025-11-28 09:54:11.954 IST [27099] LOG:  AutoIndex: Worker cycle 227: END (evaluated=0, created=0)
 2025-11-28 09:54:16.955 IST [27099] LOG:  AutoIndex: Worker cycle 228: BEGIN (total_candidates=0)
 2025-11-28 09:54:16.955 IST [27099] LOG:  AutoIndex: Worker cycle 228: END (evaluated=0, created=0)
+2025-11-28 09:54:21.955 IST [27099] LOG:  AutoIndex: Worker cycle 229: BEGIN (total_candidates=0)
+2025-11-28 09:54:21.956 IST [27099] LOG:  AutoIndex: Worker cycle 229: END (evaluated=0, created=0)
+2025-11-28 09:54:26.957 IST [27099] LOG:  AutoIndex: Worker cycle 230: BEGIN (total_candidates=0)
+2025-11-28 09:54:26.957 IST [27099] LOG:  AutoIndex: Worker cycle 230: END (evaluated=0, created=0)
+2025-11-28 09:54:31.958 IST [27099] LOG:  AutoIndex: Worker cycle 231: BEGIN (total_candidates=0)
+2025-11-28 09:54:31.958 IST [27099] LOG:  AutoIndex: Worker cycle 231: END (evaluated=0, created=0)
+2025-11-28 09:54:36.959 IST [27099] LOG:  AutoIndex: Worker cycle 232: BEGIN (total_candidates=0)
+2025-11-28 09:54:36.959 IST [27099] LOG:  AutoIndex: Worker cycle 232: END (evaluated=0, created=0)
+2025-11-28 09:54:41.961 IST [27099] LOG:  AutoIndex: Worker cycle 233: BEGIN (total_candidates=0)
+2025-11-28 09:54:41.961 IST [27099] LOG:  AutoIndex: Worker cycle 233: END (evaluated=0, created=0)
+2025-11-28 09:54:46.962 IST [27099] LOG:  AutoIndex: Worker cycle 234: BEGIN (total_candidates=0)
+2025-11-28 09:54:46.962 IST [27099] LOG:  AutoIndex: Worker cycle 234: END (evaluated=0, created=0)
+2025-11-28 09:54:51.963 IST [27099] LOG:  AutoIndex: Worker cycle 235: BEGIN (total_candidates=0)
+2025-11-28 09:54:51.963 IST [27099] LOG:  AutoIndex: Worker cycle 235: END (evaluated=0, created=0)
+2025-11-28 09:54:56.964 IST [27099] LOG:  AutoIndex: Worker cycle 236: BEGIN (total_candidates=0)
+2025-11-28 09:54:56.964 IST [27099] LOG:  AutoIndex: Worker cycle 236: END (evaluated=0, created=0)
+2025-11-28 09:55:01.966 IST [27099] LOG:  AutoIndex: Worker cycle 237: BEGIN (total_candidates=0)
+2025-11-28 09:55:01.966 IST [27099] LOG:  AutoIndex: Worker cycle 237: END (evaluated=0, created=0)
+2025-11-28 09:55:06.967 IST [27099] LOG:  AutoIndex: Worker cycle 238: BEGIN (total_candidates=0)
+2025-11-28 09:55:06.967 IST [27099] LOG:  AutoIndex: Worker cycle 238: END (evaluated=0, created=0)
+2025-11-28 09:55:11.968 IST [27099] LOG:  AutoIndex: Worker cycle 239: BEGIN (total_candidates=0)
+2025-11-28 09:55:11.968 IST [27099] LOG:  AutoIndex: Worker cycle 239: END (evaluated=0, created=0)
+2025-11-28 09:55:14.225 IST [27092] LOG:  received fast shutdown request
+2025-11-28 09:55:14.226 IST [27092] LOG:  aborting any active transactions
+2025-11-28 09:55:14.226 IST [27099] LOG:  autoIndexWorker: received SIGTERM, shutting down
+2025-11-28 09:55:14.226 IST [27099] LOG:  AutoIndex: Worker shutting down after 240 cycles
+2025-11-28 09:55:14.226 IST [27407] FATAL:  terminating connection due to administrator command
+2025-11-28 09:55:14.226 IST [27092] LOG:  background worker "logical replication launcher" (PID 27098) exited with exit code 1
+2025-11-28 09:55:14.226 IST [27093] LOG:  shutting down
+2025-11-28 09:55:14.226 IST [27093] LOG:  checkpoint starting: shutdown immediate
+2025-11-28 09:55:14.228 IST [27093] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/19D9398, redo lsn=0/19D9398
+2025-11-28 09:55:14.229 IST [27092] LOG:  database system is shut down
+2025-11-28 10:01:37.042 IST [74091] LOG:  AutoIndex: Shared memory initialized (size=3208 bytes)
+2025-11-28 10:01:37.042 IST [74091] LOG:  starting PostgreSQL 17.7 on aarch64-apple-darwin24.1.0, compiled by Apple clang version 15.0.0 (clang-1500.3.9.4), 64-bit
+2025-11-28 10:01:37.044 IST [74091] LOG:  listening on IPv6 address "::1", port 5434
+2025-11-28 10:01:37.044 IST [74091] LOG:  listening on IPv4 address "127.0.0.1", port 5434
+2025-11-28 10:01:37.044 IST [74091] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5434"
+2025-11-28 10:01:37.046 IST [74094] LOG:  database system was shut down at 2025-11-28 09:55:14 IST
+2025-11-28 10:01:37.049 IST [74091] LOG:  database system is ready to accept connections
+2025-11-28 10:01:37.060 IST [74098] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:01:37.060 IST [74098] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:01:42.061 IST [74098] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=0)
+2025-11-28 10:01:42.061 IST [74098] LOG:  AutoIndex: Worker cycle 1: END (evaluated=0, created=0)
+2025-11-28 10:01:47.062 IST [74098] LOG:  AutoIndex: Worker cycle 2: BEGIN (total_candidates=0)
+2025-11-28 10:01:47.062 IST [74098] LOG:  AutoIndex: Worker cycle 2: END (evaluated=0, created=0)
+2025-11-28 10:01:48.978 IST [74275] ERROR:  column "users" does not exist at character 75
+2025-11-28 10:01:48.978 IST [74275] STATEMENT:  SELECT schemaname, indexname, tablename FROM pg_indexes where tablename = "users";
+2025-11-28 10:01:52.063 IST [74098] LOG:  AutoIndex: Worker cycle 3: BEGIN (total_candidates=0)
+2025-11-28 10:01:52.063 IST [74098] LOG:  AutoIndex: Worker cycle 3: END (evaluated=0, created=0)
+2025-11-28 10:01:57.064 IST [74098] LOG:  AutoIndex: Worker cycle 4: BEGIN (total_candidates=0)
+2025-11-28 10:01:57.064 IST [74098] LOG:  AutoIndex: Worker cycle 4: END (evaluated=0, created=0)
+2025-11-28 10:01:59.040 IST [74275] LOG:  AutoIndex: SeqScan finished on relation pg_index
+2025-11-28 10:01:59.040 IST [74275] STATEMENT:  SELECT schemaname, indexname, tablename FROM pg_indexes where tablename = 'users';
+2025-11-28 10:01:59.040 IST [74275] LOG:  AutoIndex: SeqScan finished on relation pg_namespace
+2025-11-28 10:01:59.040 IST [74275] STATEMENT:  SELECT schemaname, indexname, tablename FROM pg_indexes where tablename = 'users';
+2025-11-28 10:02:02.065 IST [74098] LOG:  AutoIndex: Worker cycle 5: BEGIN (total_candidates=0)
+2025-11-28 10:02:02.065 IST [74098] LOG:  AutoIndex: Worker cycle 5: END (evaluated=0, created=0)
+2025-11-28 10:02:07.067 IST [74098] LOG:  AutoIndex: Worker cycle 6: BEGIN (total_candidates=0)
+2025-11-28 10:02:07.067 IST [74098] LOG:  AutoIndex: Worker cycle 6: END (evaluated=0, created=0)
+2025-11-28 10:02:12.056 IST [74275] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 10:02:12.056 IST [74275] STATEMENT:  select * from users;
+2025-11-28 10:02:12.067 IST [74098] LOG:  AutoIndex: Worker cycle 7: BEGIN (total_candidates=0)
+2025-11-28 10:02:12.067 IST [74098] LOG:  AutoIndex: Worker cycle 7: END (evaluated=0, created=0)
+2025-11-28 10:02:17.068 IST [74098] LOG:  AutoIndex: Worker cycle 8: BEGIN (total_candidates=0)
+2025-11-28 10:02:17.068 IST [74098] LOG:  AutoIndex: Worker cycle 8: END (evaluated=0, created=0)
+2025-11-28 10:02:22.069 IST [74098] LOG:  AutoIndex: Worker cycle 9: BEGIN (total_candidates=0)
+2025-11-28 10:02:22.070 IST [74098] LOG:  AutoIndex: Worker cycle 9: END (evaluated=0, created=0)
+2025-11-28 10:02:27.071 IST [74098] LOG:  AutoIndex: Worker cycle 10: BEGIN (total_candidates=0)
+2025-11-28 10:02:27.071 IST [74098] LOG:  AutoIndex: Worker cycle 10: END (evaluated=0, created=0)
+2025-11-28 10:02:29.405 IST [74275] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 10:02:29.405 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:29.405 IST [74275] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=4 on users
+2025-11-28 10:02:29.405 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:29.405 IST [74275] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 10:02:29.405 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:29.405 IST [74275] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 10:02:29.405 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:29.405 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[4]
+2025-11-28 10:02:29.405 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:29.405 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: NEW candidate added (relid=16389, num_attrs=1, total_candidates=1)
+2025-11-28 10:02:29.405 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:29.406 IST [74275] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 10:02:29.406 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:31.363 IST [74275] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 10:02:31.363 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:31.363 IST [74275] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=4 on users
+2025-11-28 10:02:31.363 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:31.363 IST [74275] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 10:02:31.363 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:31.363 IST [74275] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 10:02:31.363 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:31.363 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[4]
+2025-11-28 10:02:31.363 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:31.363 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 2 (relid=16389)
+2025-11-28 10:02:31.363 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:31.364 IST [74275] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 10:02:31.364 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:32.072 IST [74098] LOG:  AutoIndex: Worker cycle 11: BEGIN (total_candidates=1)
+2025-11-28 10:02:32.073 IST [74098] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=2
+2025-11-28 10:02:32.073 IST [74098] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=2)
+2025-11-28 10:02:32.073 IST [74098] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:02:32.073 IST [74098] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:02:32.073 IST [74098] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:02:32.073 IST [74098] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:02:32.073 IST [74098] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:02:32.073 IST [74098] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=20.0000 (frequency=2 * 10)
+2025-11-28 10:02:32.074 IST [74098] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=26.9078 (freq=20.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:02:32.074 IST [74098] LOG:  AutoIndex: Worker: candidate[0] score=26.9078 (threshold=10.0000)
+2025-11-28 10:02:32.074 IST [74098] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=26.9078
+2025-11-28 10:02:32.074 IST [74098] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 26.907755)
+2025-11-28 10:02:32.076 IST [74098] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:02:32.076 IST [74098] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:02:32.078 IST [74091] LOG:  background worker "auto_index_worker" (PID 74098) exited with exit code 1
+2025-11-28 10:02:32.130 IST [74275] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 10:02:32.130 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:32.130 IST [74275] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=4 on users
+2025-11-28 10:02:32.130 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:32.130 IST [74275] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 10:02:32.130 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:32.130 IST [74275] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 10:02:32.130 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:32.130 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[4]
+2025-11-28 10:02:32.130 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:32.130 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 3 (relid=16389)
+2025-11-28 10:02:32.130 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:32.131 IST [74275] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 10:02:32.131 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:32.986 IST [74275] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 10:02:32.986 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:32.986 IST [74275] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=4 on users
+2025-11-28 10:02:32.986 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:32.986 IST [74275] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 10:02:32.986 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:32.986 IST [74275] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 10:02:32.986 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:32.986 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[4]
+2025-11-28 10:02:32.986 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:32.986 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 4 (relid=16389)
+2025-11-28 10:02:32.986 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:32.987 IST [74275] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 10:02:32.987 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:33.540 IST [74275] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 10:02:33.540 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:33.541 IST [74275] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=4 on users
+2025-11-28 10:02:33.541 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:33.541 IST [74275] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 10:02:33.541 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:33.541 IST [74275] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 10:02:33.541 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:33.541 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[4]
+2025-11-28 10:02:33.541 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:33.541 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 5 (relid=16389)
+2025-11-28 10:02:33.541 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:33.542 IST [74275] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 10:02:33.542 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:33.961 IST [74275] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 10:02:33.961 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:33.961 IST [74275] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=4 on users
+2025-11-28 10:02:33.961 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:33.961 IST [74275] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 10:02:33.961 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:33.961 IST [74275] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 10:02:33.961 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:33.961 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[4]
+2025-11-28 10:02:33.961 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:33.961 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 6 (relid=16389)
+2025-11-28 10:02:33.961 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:33.962 IST [74275] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 10:02:33.962 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:34.330 IST [74275] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 10:02:34.330 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:34.330 IST [74275] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=4 on users
+2025-11-28 10:02:34.330 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:34.330 IST [74275] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 10:02:34.330 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:34.330 IST [74275] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 10:02:34.330 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:34.331 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[4]
+2025-11-28 10:02:34.331 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:34.331 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 7 (relid=16389)
+2025-11-28 10:02:34.331 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:34.331 IST [74275] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 10:02:34.331 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:34.611 IST [74275] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 10:02:34.611 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:34.611 IST [74275] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=4 on users
+2025-11-28 10:02:34.611 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:34.611 IST [74275] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 10:02:34.611 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:34.611 IST [74275] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 10:02:34.611 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:34.611 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[4]
+2025-11-28 10:02:34.611 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:34.611 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 8 (relid=16389)
+2025-11-28 10:02:34.611 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:34.612 IST [74275] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 10:02:34.612 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:34.908 IST [74275] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 10:02:34.908 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:34.908 IST [74275] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=4 on users
+2025-11-28 10:02:34.908 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:34.908 IST [74275] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 10:02:34.908 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:34.908 IST [74275] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 10:02:34.908 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:34.908 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[4]
+2025-11-28 10:02:34.908 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:34.908 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 9 (relid=16389)
+2025-11-28 10:02:34.908 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:34.908 IST [74275] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 10:02:34.908 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:35.225 IST [74275] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 10:02:35.225 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:35.225 IST [74275] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=4 on users
+2025-11-28 10:02:35.225 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:35.225 IST [74275] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 10:02:35.225 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:35.225 IST [74275] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 10:02:35.225 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:35.225 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[4]
+2025-11-28 10:02:35.225 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:35.225 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 10 (relid=16389)
+2025-11-28 10:02:35.225 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:35.226 IST [74275] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 10:02:35.226 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:35.507 IST [74275] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 10:02:35.507 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:35.507 IST [74275] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=4 on users
+2025-11-28 10:02:35.507 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:35.507 IST [74275] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 10:02:35.507 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:35.507 IST [74275] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 10:02:35.507 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:35.507 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[4]
+2025-11-28 10:02:35.507 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:35.507 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 11 (relid=16389)
+2025-11-28 10:02:35.507 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:35.508 IST [74275] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 10:02:35.508 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:02:40.252 IST [74275] ERROR:  column "users" does not exist at character 75
+2025-11-28 10:02:40.252 IST [74275] STATEMENT:  SELECT schemaname, indexname, tablename FROM pg_indexes where tablename = "users";
+2025-11-28 10:02:42.084 IST [75119] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:02:42.084 IST [75119] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:02:42.084 IST [75119] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:02:42.084 IST [75119] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=11
+2025-11-28 10:02:42.084 IST [75119] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=11)
+2025-11-28 10:02:42.084 IST [75119] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:02:42.085 IST [75119] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:02:42.085 IST [75119] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:02:42.085 IST [75119] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:02:42.085 IST [75119] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:02:42.085 IST [75119] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=110.0000 (frequency=11 * 10)
+2025-11-28 10:02:42.085 IST [75119] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=116.9078 (freq=110.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:02:42.085 IST [75119] LOG:  AutoIndex: Worker: candidate[0] score=116.9078 (threshold=10.0000)
+2025-11-28 10:02:42.085 IST [75119] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=116.9078
+2025-11-28 10:02:42.085 IST [75119] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 116.907755)
+2025-11-28 10:02:42.085 IST [75119] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:02:42.085 IST [75119] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:02:42.086 IST [74091] LOG:  background worker "auto_index_worker" (PID 75119) exited with exit code 1
+2025-11-28 10:02:47.825 IST [74275] LOG:  AutoIndex: SeqScan finished on relation pg_index
+2025-11-28 10:02:47.825 IST [74275] STATEMENT:  SELECT schemaname, indexname, tablename FROM pg_indexes where tablename = 'users';
+2025-11-28 10:02:47.826 IST [74275] LOG:  AutoIndex: SeqScan finished on relation pg_namespace
+2025-11-28 10:02:47.826 IST [74275] STATEMENT:  SELECT schemaname, indexname, tablename FROM pg_indexes where tablename = 'users';
+2025-11-28 10:02:52.095 IST [75236] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:02:52.096 IST [75236] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:02:52.096 IST [75236] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:02:52.096 IST [75236] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=11
+2025-11-28 10:02:52.096 IST [75236] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=11)
+2025-11-28 10:02:52.096 IST [75236] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:02:52.096 IST [75236] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:02:52.097 IST [75236] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:02:52.097 IST [75236] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:02:52.097 IST [75236] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:02:52.097 IST [75236] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=110.0000 (frequency=11 * 10)
+2025-11-28 10:02:52.097 IST [75236] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=116.9078 (freq=110.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:02:52.097 IST [75236] LOG:  AutoIndex: Worker: candidate[0] score=116.9078 (threshold=10.0000)
+2025-11-28 10:02:52.097 IST [75236] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=116.9078
+2025-11-28 10:02:52.097 IST [75236] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 116.907755)
+2025-11-28 10:02:52.097 IST [75236] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:02:52.097 IST [75236] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:02:52.097 IST [74091] LOG:  background worker "auto_index_worker" (PID 75236) exited with exit code 1
+2025-11-28 10:03:02.106 IST [75379] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:03:02.106 IST [75379] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:03:02.106 IST [75379] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:03:02.106 IST [75379] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=11
+2025-11-28 10:03:02.106 IST [75379] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=11)
+2025-11-28 10:03:02.106 IST [75379] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:03:02.106 IST [75379] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:03:02.106 IST [75379] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:03:02.106 IST [75379] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:03:02.106 IST [75379] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:03:02.106 IST [75379] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=110.0000 (frequency=11 * 10)
+2025-11-28 10:03:02.106 IST [75379] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=116.9078 (freq=110.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:03:02.106 IST [75379] LOG:  AutoIndex: Worker: candidate[0] score=116.9078 (threshold=10.0000)
+2025-11-28 10:03:02.106 IST [75379] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=116.9078
+2025-11-28 10:03:02.106 IST [75379] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 116.907755)
+2025-11-28 10:03:02.107 IST [75379] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:03:02.107 IST [75379] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:03:02.107 IST [74091] LOG:  background worker "auto_index_worker" (PID 75379) exited with exit code 1
+2025-11-28 10:03:12.113 IST [75521] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:03:12.114 IST [75521] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:03:12.114 IST [75521] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:03:12.114 IST [75521] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=11
+2025-11-28 10:03:12.114 IST [75521] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=11)
+2025-11-28 10:03:12.114 IST [75521] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:03:12.114 IST [75521] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:03:12.114 IST [75521] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:03:12.114 IST [75521] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:03:12.114 IST [75521] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:03:12.114 IST [75521] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=110.0000 (frequency=11 * 10)
+2025-11-28 10:03:12.114 IST [75521] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=116.9078 (freq=110.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:03:12.114 IST [75521] LOG:  AutoIndex: Worker: candidate[0] score=116.9078 (threshold=10.0000)
+2025-11-28 10:03:12.115 IST [75521] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=116.9078
+2025-11-28 10:03:12.115 IST [75521] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 116.907755)
+2025-11-28 10:03:12.115 IST [75521] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:03:12.115 IST [75521] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:03:12.116 IST [74091] LOG:  background worker "auto_index_worker" (PID 75521) exited with exit code 1
+2025-11-28 10:03:22.122 IST [75634] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:03:22.122 IST [75634] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:03:22.122 IST [75634] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:03:22.122 IST [75634] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=11
+2025-11-28 10:03:22.122 IST [75634] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=11)
+2025-11-28 10:03:22.123 IST [75634] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:03:22.123 IST [75634] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:03:22.123 IST [75634] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:03:22.123 IST [75634] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:03:22.123 IST [75634] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:03:22.123 IST [75634] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=110.0000 (frequency=11 * 10)
+2025-11-28 10:03:22.123 IST [75634] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=116.9078 (freq=110.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:03:22.123 IST [75634] LOG:  AutoIndex: Worker: candidate[0] score=116.9078 (threshold=10.0000)
+2025-11-28 10:03:22.123 IST [75634] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=116.9078
+2025-11-28 10:03:22.123 IST [75634] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 116.907755)
+2025-11-28 10:03:22.123 IST [75634] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:03:22.123 IST [75634] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:03:22.124 IST [74091] LOG:  background worker "auto_index_worker" (PID 75634) exited with exit code 1
+2025-11-28 10:03:32.132 IST [75777] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:03:32.132 IST [75777] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:03:32.132 IST [75777] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:03:32.132 IST [75777] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=11
+2025-11-28 10:03:32.132 IST [75777] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=11)
+2025-11-28 10:03:32.132 IST [75777] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:03:32.132 IST [75777] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:03:32.132 IST [75777] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:03:32.132 IST [75777] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:03:32.132 IST [75777] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:03:32.132 IST [75777] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=110.0000 (frequency=11 * 10)
+2025-11-28 10:03:32.132 IST [75777] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=116.9078 (freq=110.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:03:32.132 IST [75777] LOG:  AutoIndex: Worker: candidate[0] score=116.9078 (threshold=10.0000)
+2025-11-28 10:03:32.132 IST [75777] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=116.9078
+2025-11-28 10:03:32.132 IST [75777] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 116.907755)
+2025-11-28 10:03:32.133 IST [75777] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:03:32.133 IST [75777] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:03:32.133 IST [74091] LOG:  background worker "auto_index_worker" (PID 75777) exited with exit code 1
+2025-11-28 10:03:35.745 IST [74275] LOG:  AutoIndex: SeqScan finished on relation pg_index
+2025-11-28 10:03:35.745 IST [74275] STATEMENT:  SELECT schemaname, indexname, tablename FROM pg_indexes where tablename = 'users';
+2025-11-28 10:03:35.745 IST [74275] LOG:  AutoIndex: SeqScan finished on relation pg_namespace
+2025-11-28 10:03:35.745 IST [74275] STATEMENT:  SELECT schemaname, indexname, tablename FROM pg_indexes where tablename = 'users';
+2025-11-28 10:03:37.831 IST [74275] LOG:  AutoIndex: SeqScan finished on relation pg_index
+2025-11-28 10:03:37.831 IST [74275] STATEMENT:  SELECT schemaname, indexname, tablename FROM pg_indexes where tablename = 'users';
+2025-11-28 10:03:37.831 IST [74275] LOG:  AutoIndex: SeqScan finished on relation pg_namespace
+2025-11-28 10:03:37.831 IST [74275] STATEMENT:  SELECT schemaname, indexname, tablename FROM pg_indexes where tablename = 'users';
+2025-11-28 10:03:40.228 IST [74275] LOG:  AutoIndex: SeqScan finished on relation pg_index
+2025-11-28 10:03:40.228 IST [74275] STATEMENT:  SELECT schemaname, indexname, tablename FROM pg_indexes where tablename = 'users';
+2025-11-28 10:03:40.228 IST [74275] LOG:  AutoIndex: SeqScan finished on relation pg_namespace
+2025-11-28 10:03:40.228 IST [74275] STATEMENT:  SELECT schemaname, indexname, tablename FROM pg_indexes where tablename = 'users';
+2025-11-28 10:03:42.143 IST [75924] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:03:42.143 IST [75924] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:03:42.143 IST [75924] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:03:42.143 IST [75924] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=11
+2025-11-28 10:03:42.143 IST [75924] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=11)
+2025-11-28 10:03:42.143 IST [75924] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:03:42.143 IST [75924] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:03:42.143 IST [75924] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:03:42.143 IST [75924] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:03:42.143 IST [75924] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:03:42.143 IST [75924] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=110.0000 (frequency=11 * 10)
+2025-11-28 10:03:42.143 IST [75924] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=116.9078 (freq=110.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:03:42.144 IST [75924] LOG:  AutoIndex: Worker: candidate[0] score=116.9078 (threshold=10.0000)
+2025-11-28 10:03:42.144 IST [75924] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=116.9078
+2025-11-28 10:03:42.144 IST [75924] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 116.907755)
+2025-11-28 10:03:42.144 IST [75924] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:03:42.144 IST [75924] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:03:42.145 IST [74091] LOG:  background worker "auto_index_worker" (PID 75924) exited with exit code 1
+2025-11-28 10:03:42.756 IST [74275] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 10:03:42.756 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:03:42.756 IST [74275] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=4 on users
+2025-11-28 10:03:42.756 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:03:42.756 IST [74275] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 10:03:42.756 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:03:42.756 IST [74275] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 10:03:42.756 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:03:42.756 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[4]
+2025-11-28 10:03:42.756 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:03:42.756 IST [74275] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 12 (relid=16389)
+2025-11-28 10:03:42.756 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:03:42.757 IST [74275] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 10:03:42.757 IST [74275] STATEMENT:  select * from users where age=53;
+2025-11-28 10:03:52.149 IST [76068] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:03:52.149 IST [76068] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:03:52.149 IST [76068] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:03:52.149 IST [76068] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:03:52.149 IST [76068] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:03:52.150 IST [76068] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:03:52.150 IST [76068] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:03:52.150 IST [76068] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:03:52.150 IST [76068] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:03:52.150 IST [76068] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:03:52.150 IST [76068] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:03:52.150 IST [76068] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:03:52.150 IST [76068] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:03:52.150 IST [76068] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:03:52.150 IST [76068] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:03:52.150 IST [76068] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:03:52.150 IST [76068] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:03:52.150 IST [74091] LOG:  background worker "auto_index_worker" (PID 76068) exited with exit code 1
+2025-11-28 10:04:02.158 IST [76182] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:04:02.158 IST [76182] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:04:02.158 IST [76182] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:04:02.159 IST [76182] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:04:02.159 IST [76182] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:04:02.159 IST [76182] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:04:02.159 IST [76182] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:04:02.159 IST [76182] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:04:02.159 IST [76182] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:04:02.159 IST [76182] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:04:02.159 IST [76182] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:04:02.159 IST [76182] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:04:02.159 IST [76182] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:04:02.159 IST [76182] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:04:02.159 IST [76182] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:04:02.159 IST [76182] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:04:02.159 IST [76182] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:04:02.160 IST [74091] LOG:  background worker "auto_index_worker" (PID 76182) exited with exit code 1
+2025-11-28 10:04:12.167 IST [76324] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:04:12.167 IST [76324] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:04:12.167 IST [76324] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:04:12.168 IST [76324] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:04:12.168 IST [76324] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:04:12.168 IST [76324] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:04:12.168 IST [76324] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:04:12.168 IST [76324] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:04:12.168 IST [76324] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:04:12.168 IST [76324] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:04:12.168 IST [76324] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:04:12.168 IST [76324] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:04:12.168 IST [76324] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:04:12.168 IST [76324] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:04:12.168 IST [76324] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:04:12.168 IST [76324] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:04:12.168 IST [76324] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:04:12.169 IST [74091] LOG:  background worker "auto_index_worker" (PID 76324) exited with exit code 1
+2025-11-28 10:04:22.173 IST [76464] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:04:22.173 IST [76464] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:04:22.173 IST [76464] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:04:22.173 IST [76464] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:04:22.174 IST [76464] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:04:22.174 IST [76464] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:04:22.174 IST [76464] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:04:22.174 IST [76464] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:04:22.174 IST [76464] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:04:22.174 IST [76464] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:04:22.174 IST [76464] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:04:22.174 IST [76464] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:04:22.174 IST [76464] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:04:22.174 IST [76464] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:04:22.174 IST [76464] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:04:22.174 IST [76464] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:04:22.174 IST [76464] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:04:22.174 IST [74091] LOG:  background worker "auto_index_worker" (PID 76464) exited with exit code 1
+2025-11-28 10:04:26.174 IST [74275] LOG:  AutoIndex: SeqScan finished on relation pg_index
+2025-11-28 10:04:26.174 IST [74275] STATEMENT:  SELECT schemaname, indexname, tablename FROM pg_indexes where tablename = 'users';
+2025-11-28 10:04:26.174 IST [74275] LOG:  AutoIndex: SeqScan finished on relation pg_namespace
+2025-11-28 10:04:26.174 IST [74275] STATEMENT:  SELECT schemaname, indexname, tablename FROM pg_indexes where tablename = 'users';
+2025-11-28 10:04:32.182 IST [76582] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:04:32.182 IST [76582] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:04:32.182 IST [76582] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:04:32.182 IST [76582] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:04:32.182 IST [76582] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:04:32.182 IST [76582] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:04:32.182 IST [76582] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:04:32.182 IST [76582] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:04:32.182 IST [76582] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:04:32.182 IST [76582] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:04:32.182 IST [76582] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:04:32.182 IST [76582] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:04:32.182 IST [76582] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:04:32.182 IST [76582] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:04:32.182 IST [76582] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:04:32.183 IST [76582] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:04:32.183 IST [76582] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:04:32.183 IST [74091] LOG:  background worker "auto_index_worker" (PID 76582) exited with exit code 1
+2025-11-28 10:04:42.190 IST [76736] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:04:42.190 IST [76736] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:04:42.190 IST [76736] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:04:42.190 IST [76736] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:04:42.190 IST [76736] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:04:42.190 IST [76736] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:04:42.190 IST [76736] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:04:42.190 IST [76736] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:04:42.190 IST [76736] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:04:42.190 IST [76736] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:04:42.190 IST [76736] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:04:42.190 IST [76736] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:04:42.190 IST [76736] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:04:42.190 IST [76736] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:04:42.190 IST [76736] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:04:42.190 IST [76736] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:04:42.190 IST [76736] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:04:42.191 IST [74091] LOG:  background worker "auto_index_worker" (PID 76736) exited with exit code 1
+2025-11-28 10:04:52.196 IST [76885] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:04:52.197 IST [76885] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:04:52.197 IST [76885] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:04:52.197 IST [76885] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:04:52.197 IST [76885] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:04:52.197 IST [76885] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:04:52.197 IST [76885] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:04:52.197 IST [76885] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:04:52.197 IST [76885] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:04:52.197 IST [76885] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:04:52.197 IST [76885] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:04:52.197 IST [76885] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:04:52.197 IST [76885] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:04:52.197 IST [76885] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:04:52.198 IST [76885] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:04:52.198 IST [76885] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:04:52.198 IST [76885] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:04:52.199 IST [74091] LOG:  background worker "auto_index_worker" (PID 76885) exited with exit code 1
+2025-11-28 10:05:02.203 IST [76999] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:05:02.203 IST [76999] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:05:02.203 IST [76999] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:05:02.203 IST [76999] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:05:02.203 IST [76999] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:05:02.204 IST [76999] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:05:02.204 IST [76999] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:05:02.204 IST [76999] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:05:02.204 IST [76999] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:05:02.204 IST [76999] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:05:02.204 IST [76999] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:05:02.204 IST [76999] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:05:02.204 IST [76999] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:05:02.204 IST [76999] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:05:02.204 IST [76999] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:05:02.204 IST [76999] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:05:02.204 IST [76999] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:05:02.205 IST [74091] LOG:  background worker "auto_index_worker" (PID 76999) exited with exit code 1
+2025-11-28 10:05:12.211 IST [77140] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:05:12.211 IST [77140] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:05:12.211 IST [77140] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:05:12.211 IST [77140] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:05:12.211 IST [77140] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:05:12.212 IST [77140] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:05:12.212 IST [77140] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:05:12.212 IST [77140] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:05:12.212 IST [77140] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:05:12.212 IST [77140] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:05:12.212 IST [77140] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:05:12.212 IST [77140] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:05:12.212 IST [77140] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:05:12.212 IST [77140] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:05:12.212 IST [77140] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:05:12.212 IST [77140] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:05:12.212 IST [77140] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:05:12.213 IST [74091] LOG:  background worker "auto_index_worker" (PID 77140) exited with exit code 1
+2025-11-28 10:05:22.218 IST [77280] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:05:22.218 IST [77280] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:05:22.218 IST [77280] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:05:22.218 IST [77280] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:05:22.218 IST [77280] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:05:22.218 IST [77280] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:05:22.218 IST [77280] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:05:22.218 IST [77280] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:05:22.218 IST [77280] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:05:22.218 IST [77280] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:05:22.218 IST [77280] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:05:22.218 IST [77280] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:05:22.218 IST [77280] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:05:22.218 IST [77280] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:05:22.218 IST [77280] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:05:22.218 IST [77280] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:05:22.218 IST [77280] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:05:22.219 IST [74091] LOG:  background worker "auto_index_worker" (PID 77280) exited with exit code 1
+2025-11-28 10:05:32.228 IST [77395] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:05:32.228 IST [77395] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:05:32.228 IST [77395] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:05:32.228 IST [77395] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:05:32.228 IST [77395] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:05:32.228 IST [77395] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:05:32.228 IST [77395] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:05:32.228 IST [77395] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:05:32.228 IST [77395] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:05:32.228 IST [77395] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:05:32.228 IST [77395] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:05:32.228 IST [77395] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:05:32.228 IST [77395] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:05:32.228 IST [77395] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:05:32.228 IST [77395] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:05:32.229 IST [77395] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:05:32.229 IST [77395] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:05:32.229 IST [74091] LOG:  background worker "auto_index_worker" (PID 77395) exited with exit code 1
+2025-11-28 10:05:42.238 IST [77536] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:05:42.238 IST [77536] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:05:42.238 IST [77536] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:05:42.238 IST [77536] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:05:42.238 IST [77536] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:05:42.238 IST [77536] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:05:42.238 IST [77536] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:05:42.238 IST [77536] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:05:42.238 IST [77536] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:05:42.238 IST [77536] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:05:42.238 IST [77536] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:05:42.238 IST [77536] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:05:42.238 IST [77536] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:05:42.238 IST [77536] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:05:42.238 IST [77536] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:05:42.238 IST [77536] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:05:42.238 IST [77536] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:05:42.239 IST [74091] LOG:  background worker "auto_index_worker" (PID 77536) exited with exit code 1
+2025-11-28 10:05:52.246 IST [77676] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:05:52.246 IST [77676] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:05:52.246 IST [77676] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:05:52.246 IST [77676] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:05:52.246 IST [77676] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:05:52.246 IST [77676] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:05:52.246 IST [77676] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:05:52.247 IST [77676] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:05:52.247 IST [77676] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:05:52.247 IST [77676] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:05:52.247 IST [77676] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:05:52.247 IST [77676] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:05:52.247 IST [77676] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:05:52.247 IST [77676] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:05:52.247 IST [77676] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:05:52.247 IST [77676] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:05:52.247 IST [77676] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:05:52.248 IST [74091] LOG:  background worker "auto_index_worker" (PID 77676) exited with exit code 1
+2025-11-28 10:06:02.257 IST [77791] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:06:02.257 IST [77791] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:06:02.257 IST [77791] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:06:02.258 IST [77791] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:06:02.258 IST [77791] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:06:02.258 IST [77791] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:06:02.258 IST [77791] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:06:02.258 IST [77791] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:06:02.258 IST [77791] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:06:02.258 IST [77791] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:06:02.258 IST [77791] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:06:02.258 IST [77791] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:06:02.258 IST [77791] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:06:02.258 IST [77791] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:06:02.258 IST [77791] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:06:02.258 IST [77791] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:06:02.258 IST [77791] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:06:02.259 IST [74091] LOG:  background worker "auto_index_worker" (PID 77791) exited with exit code 1
+2025-11-28 10:06:12.265 IST [77932] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:06:12.265 IST [77932] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:06:12.265 IST [77932] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:06:12.265 IST [77932] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:06:12.265 IST [77932] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:06:12.265 IST [77932] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:06:12.265 IST [77932] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:06:12.266 IST [77932] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:06:12.266 IST [77932] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:06:12.266 IST [77932] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:06:12.266 IST [77932] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:06:12.266 IST [77932] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:06:12.266 IST [77932] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:06:12.266 IST [77932] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:06:12.266 IST [77932] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:06:12.266 IST [77932] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:06:12.266 IST [77932] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:06:12.267 IST [74091] LOG:  background worker "auto_index_worker" (PID 77932) exited with exit code 1
+2025-11-28 10:06:22.273 IST [78072] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:06:22.273 IST [78072] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:06:22.273 IST [78072] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:06:22.273 IST [78072] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:06:22.273 IST [78072] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:06:22.273 IST [78072] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:06:22.273 IST [78072] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:06:22.273 IST [78072] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:06:22.273 IST [78072] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:06:22.273 IST [78072] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:06:22.273 IST [78072] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:06:22.273 IST [78072] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:06:22.273 IST [78072] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:06:22.273 IST [78072] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:06:22.273 IST [78072] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:06:22.274 IST [78072] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:06:22.274 IST [78072] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:06:22.274 IST [74091] LOG:  background worker "auto_index_worker" (PID 78072) exited with exit code 1
+2025-11-28 10:06:32.283 IST [78215] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:06:32.283 IST [78215] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:06:32.283 IST [78215] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:06:32.283 IST [78215] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:06:32.283 IST [78215] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:06:32.284 IST [78215] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:06:32.284 IST [78215] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:06:32.284 IST [78215] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:06:32.284 IST [78215] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:06:32.284 IST [78215] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:06:32.284 IST [78215] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:06:32.284 IST [78215] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:06:32.284 IST [78215] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:06:32.284 IST [78215] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:06:32.284 IST [78215] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:06:32.285 IST [78215] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:06:32.285 IST [78215] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:06:32.286 IST [74091] LOG:  background worker "auto_index_worker" (PID 78215) exited with exit code 1
+2025-11-28 10:06:37.050 IST [74092] LOG:  checkpoint starting: time
+2025-11-28 10:06:37.056 IST [74092] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.001 s, total=0.007 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/19D94A0, redo lsn=0/19D9448
+2025-11-28 10:06:42.291 IST [78338] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:06:42.291 IST [78338] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:06:42.291 IST [78338] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:06:42.291 IST [78338] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:06:42.291 IST [78338] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:06:42.291 IST [78338] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:06:42.292 IST [78338] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:06:42.292 IST [78338] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:06:42.292 IST [78338] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:06:42.292 IST [78338] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:06:42.292 IST [78338] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:06:42.292 IST [78338] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:06:42.292 IST [78338] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:06:42.292 IST [78338] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:06:42.292 IST [78338] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:06:42.292 IST [78338] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:06:42.292 IST [78338] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:06:42.293 IST [74091] LOG:  background worker "auto_index_worker" (PID 78338) exited with exit code 1
+2025-11-28 10:06:52.301 IST [78480] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:06:52.301 IST [78480] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:06:52.301 IST [78480] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:06:52.301 IST [78480] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:06:52.301 IST [78480] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:06:52.301 IST [78480] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:06:52.301 IST [78480] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:06:52.301 IST [78480] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:06:52.301 IST [78480] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:06:52.302 IST [78480] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:06:52.302 IST [78480] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:06:52.302 IST [78480] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:06:52.302 IST [78480] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:06:52.302 IST [78480] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:06:52.302 IST [78480] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:06:52.302 IST [78480] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:06:52.302 IST [78480] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:06:52.303 IST [74091] LOG:  background worker "auto_index_worker" (PID 78480) exited with exit code 1
+2025-11-28 10:07:02.311 IST [78622] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:07:02.311 IST [78622] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:07:02.311 IST [78622] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:07:02.312 IST [78622] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:07:02.312 IST [78622] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:07:02.312 IST [78622] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:07:02.312 IST [78622] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:07:02.312 IST [78622] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:07:02.312 IST [78622] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:07:02.312 IST [78622] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:07:02.312 IST [78622] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:07:02.312 IST [78622] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:07:02.313 IST [78622] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:07:02.313 IST [78622] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:07:02.313 IST [78622] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:07:02.313 IST [78622] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:07:02.313 IST [78622] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:07:02.314 IST [74091] LOG:  background worker "auto_index_worker" (PID 78622) exited with exit code 1
+2025-11-28 10:07:12.319 IST [78755] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:07:12.319 IST [78755] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:07:12.319 IST [78755] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:07:12.319 IST [78755] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:07:12.319 IST [78755] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:07:12.319 IST [78755] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:07:12.319 IST [78755] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:07:12.319 IST [78755] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:07:12.319 IST [78755] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:07:12.319 IST [78755] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:07:12.319 IST [78755] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:07:12.319 IST [78755] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:07:12.319 IST [78755] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:07:12.319 IST [78755] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:07:12.319 IST [78755] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:07:12.320 IST [78755] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:07:12.320 IST [78755] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:07:12.320 IST [74091] LOG:  background worker "auto_index_worker" (PID 78755) exited with exit code 1
+2025-11-28 10:07:22.322 IST [78898] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 10:07:22.322 IST [78898] LOG:  AutoIndex: Worker initialized (log_enabled=true)
+2025-11-28 10:07:22.322 IST [78898] LOG:  AutoIndex: Worker cycle 1: BEGIN (total_candidates=1)
+2025-11-28 10:07:22.322 IST [78898] LOG:  AutoIndex: Worker: evaluating candidate[0] relid=16389, num_attrs=1, frequency=12
+2025-11-28 10:07:22.322 IST [78898] LOG:  AutoIndex: CalculateIndexScore: START (relid=16389, num_attrs=1, frequency=12)
+2025-11-28 10:07:22.323 IST [78898] LOG:  AutoIndex: CalculateIndexScore: table rows=1000
+2025-11-28 10:07:22.323 IST [78898] LOG:  AutoIndex: CalculateIndexScore: table_size_score=6.9078 (log of 1000 rows)
+2025-11-28 10:07:22.323 IST [78898] LOG:  AutoIndex: CalculateIndexScore: attr[0]=4 stadistinct=81.0000
+2025-11-28 10:07:22.323 IST [78898] LOG:  AutoIndex: CalculateIndexScore: attr[0] GOOD selectivity
+2025-11-28 10:07:22.323 IST [78898] LOG:  AutoIndex: CalculateIndexScore: has selective column(s), no penalty applied
+2025-11-28 10:07:22.323 IST [78898] LOG:  AutoIndex: CalculateIndexScore: scan_frequency_score=120.0000 (frequency=12 * 10)
+2025-11-28 10:07:22.323 IST [78898] LOG:  AutoIndex: CalculateIndexScore: FINAL SCORE=126.9078 (freq=120.0000 + size=6.9078 + sel=0.0000)
+2025-11-28 10:07:22.323 IST [78898] LOG:  AutoIndex: Worker: candidate[0] score=126.9078 (threshold=10.0000)
+2025-11-28 10:07:22.323 IST [78898] LOG:  AutoIndex: Worker: CREATING INDEX on users(age) - score=126.9078
+2025-11-28 10:07:22.323 IST [78898] LOG:  autoIndexWorker: creating index: CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age) (score: 126.907755)
+2025-11-28 10:07:22.323 IST [78898] ERROR:  CREATE INDEX CONCURRENTLY cannot be executed from a function
+2025-11-28 10:07:22.323 IST [78898] CONTEXT:  SQL statement "CREATE INDEX CONCURRENTLY auto_idx_users_age ON users (age)"
+2025-11-28 10:07:22.323 IST [74091] LOG:  background worker "auto_index_worker" (PID 78898) exited with exit code 1

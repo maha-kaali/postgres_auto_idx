@@ -3,6 +3,9 @@
 #include "storage/shmem.h"
 #include "nodes/pg_list.h"
 #include "utils/guc.h"
+#include "utils/syscache.h"
+#include "catalog/pg_class.h"
+#include "access/heapam.h"
 
 AutoIndexShmemState *AutoIndexState = NULL;
 
@@ -23,6 +26,26 @@ DefineAutoIndexGUCs(void)
                              NULL,
                              NULL,
                              NULL);
+}
+
+/* Get estimated row count for a relation from pg_class */
+double
+get_relation_rows(Oid relid)
+{
+    HeapTuple tuple;
+    Form_pg_class classForm;
+    double rows = 1000.0;  /* default fallback */
+
+    tuple = SearchSysCache1(RELOID, ObjectIdGetDatum(relid));
+    if (HeapTupleIsValid(tuple))
+    {
+        classForm = (Form_pg_class) GETSTRUCT(tuple);
+        rows = classForm->reltuples;
+        if (rows < 1.0)
+            rows = 1.0;  /* avoid log(0) or negative */
+        ReleaseSysCache(tuple);
+    }
+    return rows;
 }
 
 void AutoIndexShmemInit(void) {

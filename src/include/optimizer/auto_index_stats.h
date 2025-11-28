@@ -32,7 +32,9 @@ typedef struct {
     int num_attrs;
     AttrNumber attrs[MAX_COMPOSITE_ATTRS]; // to support composite keys
     int frequency;
-    slock_t mutex; // to support concurrency, incase multiple workers try to udpate
+    int ideal_freq;     // threshold frequency before considering this candidate
+    bool freq_set;      // whether ideal_freq has been calculated
+    slock_t mutex;      // to support concurrency, incase multiple workers try to udpate
 } IndexCandidate;
 
 typedef struct {
@@ -48,5 +50,6 @@ void AutoIndexShmemInit(void);
 void TrackIndexCandidate(Oid relid, List *attnums);
 double CalculateIndexScore(Oid relid, AttrNumber *attrs, int num_attrs, int frequency);
 void DefineAutoIndexGUCs(void);
+double get_relation_rows(Oid relid);
 
 #endif
