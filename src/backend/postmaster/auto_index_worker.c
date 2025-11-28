@@ -82,7 +82,10 @@ void AutoIndexWorkerMain(Datum main_arg) {
 
         AUTO_INDEX_LOG("Worker cycle %d: BEGIN (total_candidates=%d)", cycle_count, AutoIndexState->count);
 
-        // start transaction for catalog access
+        /* Print state table if detailed logging is enabled */
+        PrintCandidateStateTable();
+
+        /* start transaction for catalog access */
         StartTransactionCommand();
         PushActiveSnapshot(GetTransactionSnapshot());
         SPI_connect();
@@ -157,18 +160,21 @@ void AutoIndexWorkerMain(Datum main_arg) {
                                   relname, col_list.data, score);
                     elog(LOG, "autoIndexWorker: creating index: %s (score: %f)", buf.data, score);
 
-                    // Execute
+                    /* Execute */
                     SPI_execute(buf.data, false, 0);
                     indexes_created++;
 
                     AUTO_INDEX_LOG("Worker: INDEX CREATED successfully: %s", buf.data);
 
-                    // reset counter
-                    SpinLockAcquire(&cand->mutex);
-                    cand->frequency = 0;
-                    SpinLockRelease(&cand->mutex);
+                    /* Remove candidate from shared memory instead of resetting frequency */
+                    SpinLockAcquire(&AutoIndexState->global_lock);
+                    RemoveIndexCandidate(i);
+                    SpinLockRelease(&AutoIndexState->global_lock);
 
-                    AUTO_INDEX_LOG("Worker: candidate[%d] frequency reset to 0", i);
+                    AUTO_INDEX_LOG("Worker: candidate[%d] removed from candidate list", i);
+
+                    /* Decrement i since we removed an element and shifted the array */
+                    i--;
 
                     pfree(col_list.data);
                 } else {

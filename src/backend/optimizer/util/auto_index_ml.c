@@ -55,15 +55,20 @@ double CalculateIndexScore(Oid relid, AttrNumber *attrs, int num_attrs, int freq
         if (HeapTupleIsValid(statTup)) {
              Form_pg_statistic stats = (Form_pg_statistic) GETSTRUCT(statTup);
 
-             // stadistinct < 0 means percentage. > 0 means absolute count.
+             // stadistinct < 0 means percentage . > 0 means absolute count.
 
              AUTO_INDEX_LOG("CalculateIndexScore: attr[%d]=%d stadistinct=%.4f",
                            i, attrs[i], stats->stadistinct);
 
-             if (stats->stadistinct > 0 && stats->stadistinct < 5 && rows >= 1000) {
-                 current_penalty += 100; 
+            // very basic so changing
+            //  if (stats->stadistinct > 0 && stats->stadistinct < 5 && rows >= 1000) {
+            //      current_penalty += 100; 
+             double sel = stats->stadistinct / (double)rows;
 
-                 AUTO_INDEX_LOG("CalculateIndexScore: attr[%d] LOW selectivity (distinct<5), penalty+=100", i);
+             if (sel < 0.01){           // less than 1% distinct
+                 current_penalty += 100;    
+        
+                 AUTO_INDEX_LOG("CalculateIndexScore: attr[%d] LOW selectivity , penalty+=100", i);
              } else {
                  has_selective_column = true; 
 
@@ -71,7 +76,7 @@ double CalculateIndexScore(Oid relid, AttrNumber *attrs, int num_attrs, int freq
              }
              ReleaseSysCache(statTup);
         } else {
-            // if no stats available, be optimistic
+            /* if no stats available, be optimistic */
             has_selective_column = true;
             AUTO_INDEX_LOG("CalculateIndexScore: attr[%d]=%d NO stats found, assuming selective", i, attrs[i]);
         }
