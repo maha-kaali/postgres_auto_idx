@@ -108,6 +108,7 @@
 #include "postmaster/postmaster.h"
 #include "postmaster/syslogger.h"
 #include "postmaster/walsummarizer.h"
+#include "optimizer/auto_index_stats.h"
 #include "replication/logicallauncher.h"
 #include "replication/slotsync.h"
 #include "replication/walsender.h"
@@ -531,10 +532,11 @@ PostmasterMain(int argc, char *argv[])
 	MemoryContextSwitchTo(PostmasterContext);
 
     /* Register Auto Index Worker */
+	BackgroundWorker worker;
     MemSet(&worker, 0, sizeof(BackgroundWorker));
     worker.bgw_flags = BGWORKER_SHMEM_ACCESS | BGWORKER_BACKEND_DATABASE_CONNECTION;
     worker.bgw_start_time = BgWorkerStart_RecoveryFinished;
-    worker.bgw_restart_time = 10; 
+    worker.bgw_restart_time = 10;
     snprintf(worker.bgw_library_name, BGW_MAXLEN, "postgres");
     snprintf(worker.bgw_function_name, BGW_MAXLEN, "AutoIndexWorkerMain");
     snprintf(worker.bgw_name, BGW_MAXLEN, "Auto Index Worker");
@@ -596,6 +598,9 @@ PostmasterMain(int argc, char *argv[])
 	 * Options setup
 	 */
 	InitializeGUCOptions();
+
+	/* Register Auto Index GUCs - must be after InitializeGUCOptions() */
+	DefineAutoIndexGUCs();
 
 	opterr = 1;
 

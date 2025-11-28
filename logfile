@@ -1,0 +1,1221 @@
+2025-11-27 10:35:08.429 IST [53079] FATAL:  lock file "postmaster.pid" already exists
+2025-11-27 10:35:08.429 IST [53079] HINT:  Is another postmaster (PID 83931) running in data directory "/Users/jayasreemanoharan/Documents/IITB/CMInDS/RDBMS/Project/PSQL/data"?
+2025-11-27 10:35:32.239 IST [53760] FATAL:  lock file "postmaster.pid" already exists
+2025-11-27 10:35:32.239 IST [53760] HINT:  Is another postmaster (PID 83931) running in data directory "/Users/jayasreemanoharan/Documents/IITB/CMInDS/RDBMS/Project/PSQL/data"?
+2025-11-27 10:37:45.163 IST [55950] LOG:  starting PostgreSQL 19devel on aarch64-apple-darwin24.1.0, compiled by Apple clang version 15.0.0 (clang-1500.3.9.4), 64-bit
+2025-11-27 10:37:45.165 IST [55950] LOG:  listening on IPv6 address "::1", port 5434
+2025-11-27 10:37:45.165 IST [55950] LOG:  listening on IPv4 address "127.0.0.1", port 5434
+2025-11-27 10:37:45.165 IST [55950] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5434"
+2025-11-27 10:37:45.170 IST [55956] LOG:  database system was shut down at 2025-11-27 10:35:02 IST
+2025-11-27 10:37:45.173 IST [55950] LOG:  database system is ready to accept connections
+2025-11-27 10:42:45.167 IST [55954] LOG:  checkpoint starting: time
+2025-11-27 10:44:22.177 IST [55954] LOG:  checkpoint complete: wrote 956 buffers (5.8%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=96.999 s, sync=0.005 s, total=97.010 s; sync files=303, longest=0.001 s, average=0.001 s; distance=4444 kB, estimate=4444 kB; lsn=0/01BE02A0, redo lsn=0/01BE0210
+2025-11-27 12:10:21.828 IST [13018] ERROR:  database "testdb" already exists
+2025-11-27 12:10:21.828 IST [13018] STATEMENT:  CREATE DATABASE testdb;
+2025-11-27 12:10:32.875 IST [13323] FATAL:  lock file "postmaster.pid" already exists
+2025-11-27 12:10:32.875 IST [13323] HINT:  Is another postmaster (PID 55950) running in data directory "/Users/jayasreemanoharan/Documents/IITB/CMInDS/RDBMS/Proj2/PSQL/data"?
+2025-11-28 05:55:09.524 IST [55950] LOG:  received fast shutdown request
+2025-11-28 05:55:09.524 IST [55950] LOG:  aborting any active transactions
+2025-11-28 05:55:09.525 IST [55950] LOG:  background worker "logical replication launcher" (PID 55959) exited with exit code 1
+2025-11-28 05:55:09.525 IST [55954] LOG:  shutting down
+2025-11-28 05:55:09.526 IST [55954] LOG:  checkpoint starting: shutdown fast
+2025-11-28 05:55:09.528 IST [55954] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=4000 kB; lsn=0/01BE0350, redo lsn=0/01BE0350
+2025-11-28 05:55:09.532 IST [55950] LOG:  database system is shut down
+2025-11-28 01:35:08.184 GMT [86555] LOG:  unrecognized configuration parameter "autovacuum_worker_slots" in file "/Users/jayasreemanoharan/Documents/IITB/CMInDS/RDBMS/Proj2/PSQL/data/postgresql.conf" line 691
+2025-11-28 01:35:08.185 GMT [86555] FATAL:  configuration file "/Users/jayasreemanoharan/Documents/IITB/CMInDS/RDBMS/Proj2/PSQL/data/postgresql.conf" contains errors
+2025-11-28 01:35:46.413 GMT [87706] LOG:  unrecognized configuration parameter "autovacuum_worker_slots" in file "/Users/jayasreemanoharan/Documents/IITB/CMInDS/RDBMS/Proj2/PSQL/data/postgresql.conf" line 691
+2025-11-28 01:35:46.413 GMT [87706] FATAL:  configuration file "/Users/jayasreemanoharan/Documents/IITB/CMInDS/RDBMS/Proj2/PSQL/data/postgresql.conf" contains errors
+2025-11-28 07:09:15.664 IST [91136] LOG:  starting PostgreSQL 17.7 on aarch64-apple-darwin24.1.0, compiled by Apple clang version 15.0.0 (clang-1500.3.9.4), 64-bit
+2025-11-28 07:09:15.666 IST [91136] LOG:  listening on IPv6 address "::1", port 5434
+2025-11-28 07:09:15.666 IST [91136] LOG:  listening on IPv4 address "127.0.0.1", port 5434
+2025-11-28 07:09:15.667 IST [91136] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5434"
+2025-11-28 07:09:15.671 IST [91139] LOG:  database system was shut down at 2025-11-28 07:07:22 IST
+2025-11-28 07:09:15.674 IST [91136] LOG:  database system is ready to accept connections
+2025-11-28 07:09:15.690 IST [91143] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 07:09:35.303 IST [91674] ERROR:  database "testdb" already exists
+2025-11-28 07:09:35.303 IST [91674] STATEMENT:  CREATE DATABASE testdb;
+2025-11-28 07:09:43.816 IST [91909] ERROR:  database "testdb" already exists
+2025-11-28 07:09:43.816 IST [91909] STATEMENT:  CREATE DATABASE testdb;
+2025-11-28 07:14:15.673 IST [91137] LOG:  checkpoint starting: time
+2025-11-28 07:15:53.437 IST [91137] LOG:  checkpoint complete: wrote 968 buffers (5.9%); 0 WAL file(s) added, 0 removed, 0 recycled; write=97.750 s, sync=0.008 s, total=97.765 s; sync files=309, longest=0.002 s, average=0.001 s; distance=4488 kB, estimate=4488 kB; lsn=0/1971630, redo lsn=0/19715A0
+2025-11-28 07:18:12.342 IST [99092] FATAL:  lock file "postmaster.pid" already exists
+2025-11-28 07:18:12.342 IST [99092] HINT:  Is another postmaster (PID 91136) running in data directory "/Users/jayasreemanoharan/Documents/IITB/CMInDS/RDBMS/Proj2/PSQL/data"?
+TRAP: failed Assert("MemoryContextIsValid(context)"), File: "mcxt.c", Line: 1241, PID: 13938
+0   postgres                            0x0000000105149750 ExceptionalCondition + 236
+1   postgres                            0x00000001051a1a74 MemoryContextAllocExtended + 168
+2   postgres                            0x00000001051739d4 guc_malloc + 40
+3   postgres                            0x000000010517d838 init_custom_variable + 412
+4   postgres                            0x000000010517d630 DefineCustomBoolVariable + 104
+5   postgres                            0x0000000104d94fb0 DefineAutoIndexGUCs + 72
+6   postgres                            0x0000000104dba65c PostmasterMain + 224
+7   postgres                            0x0000000104c3e19c startup_hacks + 0
+8   dyld                                0x000000018f184274 start + 2840
+2025-11-28 07:34:48.196 IST [91136] LOG:  received fast shutdown request
+2025-11-28 07:34:48.196 IST [91136] LOG:  aborting any active transactions
+2025-11-28 07:34:48.196 IST [91143] LOG:  autoIndexWorker: received SIGTERM, shutting down
+2025-11-28 07:34:48.197 IST [91136] LOG:  background worker "logical replication launcher" (PID 91142) exited with exit code 1
+2025-11-28 07:34:48.197 IST [91137] LOG:  shutting down
+2025-11-28 07:34:48.197 IST [91137] LOG:  checkpoint starting: shutdown immediate
+2025-11-28 07:34:48.199 IST [91137] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=4040 kB; lsn=0/19716E0, redo lsn=0/19716E0
+2025-11-28 07:34:48.201 IST [91136] LOG:  database system is shut down
+TRAP: failed Assert("MemoryContextIsValid(context)"), File: "mcxt.c", Line: 1241, PID: 14466
+0   postgres                            0x000000010502d750 ExceptionalCondition + 236
+1   postgres                            0x0000000105085a74 MemoryContextAllocExtended + 168
+2   postgres                            0x00000001050579d4 guc_malloc + 40
+3   postgres                            0x0000000105061838 init_custom_variable + 412
+4   postgres                            0x0000000105061630 DefineCustomBoolVariable + 104
+5   postgres                            0x0000000104c78fb0 DefineAutoIndexGUCs + 72
+6   postgres                            0x0000000104c9e65c PostmasterMain + 224
+7   postgres                            0x0000000104b2219c startup_hacks + 0
+8   dyld                                0x000000018f184274 start + 2840
+TRAP: failed Assert("MemoryContextIsValid(context)"), File: "mcxt.c", Line: 1241, PID: 14689
+0   postgres                            0x0000000100b81750 ExceptionalCondition + 236
+1   postgres                            0x0000000100bd9a74 MemoryContextAllocExtended + 168
+2   postgres                            0x0000000100bab9d4 guc_malloc + 40
+3   postgres                            0x0000000100bb5838 init_custom_variable + 412
+4   postgres                            0x0000000100bb5630 DefineCustomBoolVariable + 104
+5   postgres                            0x00000001007ccfb0 DefineAutoIndexGUCs + 72
+6   postgres                            0x00000001007f265c PostmasterMain + 224
+7   postgres                            0x000000010067619c startup_hacks + 0
+8   dyld                                0x000000018f184274 start + 2840
+TRAP: failed Assert("MemoryContextIsValid(context)"), File: "mcxt.c", Line: 1241, PID: 16624
+0   postgres                            0x0000000102ae5750 ExceptionalCondition + 236
+1   postgres                            0x0000000102b3da74 MemoryContextAllocExtended + 168
+2   postgres                            0x0000000102b0f9d4 guc_malloc + 40
+3   postgres                            0x0000000102b19838 init_custom_variable + 412
+4   postgres                            0x0000000102b19630 DefineCustomBoolVariable + 104
+5   postgres                            0x0000000102730fb0 DefineAutoIndexGUCs + 72
+6   postgres                            0x000000010275665c PostmasterMain + 224
+7   postgres                            0x00000001025da19c startup_hacks + 0
+8   dyld                                0x000000018f184274 start + 2840
+TRAP: failed Assert("MemoryContextIsValid(context)"), File: "mcxt.c", Line: 1241, PID: 17466
+0   postgres                            0x0000000104cc9750 ExceptionalCondition + 236
+1   postgres                            0x0000000104d21a74 MemoryContextAllocExtended + 168
+2   postgres                            0x0000000104cf39d4 guc_malloc + 40
+3   postgres                            0x0000000104cfd838 init_custom_variable + 412
+4   postgres                            0x0000000104cfd630 DefineCustomBoolVariable + 104
+5   postgres                            0x0000000104914fb0 DefineAutoIndexGUCs + 72
+6   postgres                            0x000000010493a65c PostmasterMain + 224
+7   postgres                            0x00000001047be19c startup_hacks + 0
+8   dyld                                0x000000018f184274 start + 2840
+TRAP: failed Assert("MemoryContextIsValid(context)"), File: "mcxt.c", Line: 1241, PID: 17692
+0   postgres                            0x0000000105199750 ExceptionalCondition + 236
+1   postgres                            0x00000001051f1a74 MemoryContextAllocExtended + 168
+2   postgres                            0x00000001051c39d4 guc_malloc + 40
+3   postgres                            0x00000001051cd838 init_custom_variable + 412
+4   postgres                            0x00000001051cd630 DefineCustomBoolVariable + 104
+5   postgres                            0x0000000104de4fb0 DefineAutoIndexGUCs + 72
+6   postgres                            0x0000000104e0a65c PostmasterMain + 224
+7   postgres                            0x0000000104c8e19c startup_hacks + 0
+8   dyld                                0x000000018f184274 start + 2840
+2025-11-28 07:40:40.456 IST [22404] LOG:  starting PostgreSQL 17.7 on aarch64-apple-darwin24.1.0, compiled by Apple clang version 15.0.0 (clang-1500.3.9.4), 64-bit
+2025-11-28 07:40:40.457 IST [22404] LOG:  listening on IPv6 address "::1", port 5434
+2025-11-28 07:40:40.458 IST [22404] LOG:  listening on IPv4 address "127.0.0.1", port 5434
+2025-11-28 07:40:40.460 IST [22404] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5434"
+2025-11-28 07:40:40.464 IST [22407] LOG:  database system was shut down at 2025-11-28 07:34:48 IST
+2025-11-28 07:40:40.468 IST [22404] LOG:  database system is ready to accept connections
+2025-11-28 07:40:40.482 IST [22411] LOG:  autoIndexWorker: started and connected to database
+2025-11-28 07:43:44.248 IST [25557] ERROR:  relation "test_table" does not exist at character 40
+2025-11-28 07:43:44.248 IST [25557] STATEMENT:  SET auto_index.log = on; SELECT * FROM test_table WHERE id = 100;
+2025-11-28 07:44:04.697 IST [25868] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 07:44:04.697 IST [25868] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 07:44:04.697 IST [25868] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 07:44:04.697 IST [25868] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 07:44:04.697 IST [25868] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 07:44:04.697 IST [25868] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 07:44:04.697 IST [25868] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 07:44:04.697 IST [25868] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 07:44:04.697 IST [25868] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 07:44:04.697 IST [25868] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 07:44:04.697 IST [25868] LOG:  AutoIndex: TrackIndexCandidate: NEW candidate added (relid=16389, num_attrs=1, total_candidates=2)
+2025-11-28 07:44:04.697 IST [25868] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 07:44:04.697 IST [25868] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 07:44:04.697 IST [25868] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 07:44:04.700 IST [25868] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 07:44:04.700 IST [25868] STATEMENT:  SELECT * FROM users WHERE age > 50;
+2025-11-28 07:44:04.700 IST [25868] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=4 on users
+2025-11-28 07:44:04.700 IST [25868] STATEMENT:  SELECT * FROM users WHERE age > 50;
+2025-11-28 07:44:04.700 IST [25868] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 07:44:04.700 IST [25868] STATEMENT:  SELECT * FROM users WHERE age > 50;
+2025-11-28 07:44:04.700 IST [25868] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 07:44:04.700 IST [25868] STATEMENT:  SELECT * FROM users WHERE age > 50;
+2025-11-28 07:44:04.700 IST [25868] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[4]
+2025-11-28 07:44:04.700 IST [25868] STATEMENT:  SELECT * FROM users WHERE age > 50;
+2025-11-28 07:44:04.700 IST [25868] LOG:  AutoIndex: TrackIndexCandidate: NEW candidate added (relid=16389, num_attrs=1, total_candidates=3)
+2025-11-28 07:44:04.700 IST [25868] STATEMENT:  SELECT * FROM users WHERE age > 50;
+2025-11-28 07:44:04.701 IST [25868] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 07:44:04.701 IST [25868] STATEMENT:  SELECT * FROM users WHERE age > 50;
+2025-11-28 07:44:04.707 IST [25868] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 07:44:04.707 IST [25868] STATEMENT:  SELECT * FROM users WHERE email LIKE '%@test.com';
+2025-11-28 07:44:04.707 IST [25868] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=3 on users
+2025-11-28 07:44:04.707 IST [25868] STATEMENT:  SELECT * FROM users WHERE email LIKE '%@test.com';
+2025-11-28 07:44:04.707 IST [25868] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 07:44:04.707 IST [25868] STATEMENT:  SELECT * FROM users WHERE email LIKE '%@test.com';
+2025-11-28 07:44:04.707 IST [25868] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 07:44:04.707 IST [25868] STATEMENT:  SELECT * FROM users WHERE email LIKE '%@test.com';
+2025-11-28 07:44:04.707 IST [25868] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[3]
+2025-11-28 07:44:04.707 IST [25868] STATEMENT:  SELECT * FROM users WHERE email LIKE '%@test.com';
+2025-11-28 07:44:04.707 IST [25868] LOG:  AutoIndex: TrackIndexCandidate: NEW candidate added (relid=16389, num_attrs=1, total_candidates=4)
+2025-11-28 07:44:04.707 IST [25868] STATEMENT:  SELECT * FROM users WHERE email LIKE '%@test.com';
+2025-11-28 07:44:04.710 IST [25868] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 07:44:04.710 IST [25868] STATEMENT:  SELECT * FROM users WHERE email LIKE '%@test.com';
+2025-11-28 07:45:40.466 IST [22405] LOG:  checkpoint starting: time
+2025-11-28 07:45:47.088 IST [22405] LOG:  checkpoint complete: wrote 68 buffers (0.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=6.612 s, sync=0.005 s, total=6.623 s; sync files=46, longest=0.001 s, average=0.001 s; distance=320 kB, estimate=320 kB; lsn=0/19C1958, redo lsn=0/19C18C8
+2025-11-28 08:28:59.563 IST [61713] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:28:59.563 IST [61713] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 08:28:59.563 IST [61713] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:28:59.563 IST [61713] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 08:28:59.563 IST [61713] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:28:59.563 IST [61713] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 08:28:59.563 IST [61713] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:28:59.563 IST [61713] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 08:28:59.563 IST [61713] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:28:59.563 IST [61713] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 08:28:59.564 IST [61713] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 2 (relid=16389)
+2025-11-28 08:28:59.564 IST [61713] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 08:28:59.564 IST [61713] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:28:59.564 IST [61713] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 08:51:47.818 IST [79489] ERROR:  syntax error at or near "client_min_messages" at character 9
+2025-11-28 08:51:47.818 IST [79489] STATEMENT:  set SET client_min_messages = log;
+2025-11-28 08:51:47.821 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:51:47.821 IST [79489] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 08:51:47.821 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:51:47.821 IST [79489] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 08:51:47.821 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:51:47.821 IST [79489] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 08:51:47.821 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:51:47.821 IST [79489] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 08:51:47.821 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:51:47.821 IST [79489] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 08:51:47.821 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 3 (relid=16389)
+2025-11-28 08:51:47.821 IST [79489] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 08:51:47.821 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:51:47.821 IST [79489] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 08:51:50.653 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:51:50.653 IST [79489] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 08:51:50.653 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:51:50.653 IST [79489] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 08:51:50.653 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:51:50.653 IST [79489] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 08:51:50.654 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:51:50.654 IST [79489] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 08:51:50.654 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:51:50.654 IST [79489] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 08:51:50.654 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 4 (relid=16389)
+2025-11-28 08:51:50.654 IST [79489] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 08:51:50.654 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:51:50.654 IST [79489] STATEMENT:  SELECT * FROM users WHERE name = 'User500';
+2025-11-28 08:52:30.626 IST [79489] ERROR:  column "User500" does not exist at character 37
+2025-11-28 08:52:30.626 IST [79489] STATEMENT:  select * from users where name like "User500"
+	;
+2025-11-28 08:52:37.818 IST [79489] ERROR:  column "User500" does not exist at character 34
+2025-11-28 08:52:37.818 IST [79489] STATEMENT:  select * from users where name = "User500"
+	;
+2025-11-28 08:52:54.114 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:52:54.114 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:52:54.114 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:52:54.114 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:52:54.114 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:52:54.114 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:52:54.114 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:52:54.114 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:52:54.114 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:52:54.114 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:52:54.114 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 5 (relid=16389)
+2025-11-28 08:52:54.114 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:52:54.115 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:52:54.115 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:09.594 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:09.594 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:09.595 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:09.595 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:09.595 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:09.595 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:09.595 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:09.595 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:09.595 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:09.595 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:09.595 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 6 (relid=16389)
+2025-11-28 08:53:09.595 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:09.595 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:09.595 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:12.070 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:12.070 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:12.071 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:12.071 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:12.071 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:12.071 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:12.071 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:12.071 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:12.071 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:12.071 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:12.071 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 7 (relid=16389)
+2025-11-28 08:53:12.071 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:12.072 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:12.072 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:12.883 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:12.883 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:12.883 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:12.883 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:12.883 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:12.883 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:12.883 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:12.883 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:12.883 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:12.883 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:12.883 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 8 (relid=16389)
+2025-11-28 08:53:12.883 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:12.884 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:12.884 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:13.569 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:13.569 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:13.569 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:13.569 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:13.569 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:13.569 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:13.569 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:13.569 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:13.569 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:13.569 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:13.569 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 9 (relid=16389)
+2025-11-28 08:53:13.569 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:13.570 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:13.570 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:14.179 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:14.179 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:14.179 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:14.179 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:14.179 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:14.179 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:14.179 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:14.179 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:14.179 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:14.179 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:14.179 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 10 (relid=16389)
+2025-11-28 08:53:14.179 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:14.180 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:14.180 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:14.768 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:14.768 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:14.768 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:14.768 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:14.768 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:14.768 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:14.768 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:14.768 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:14.768 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:14.768 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:14.768 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 11 (relid=16389)
+2025-11-28 08:53:14.768 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:14.769 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:14.769 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:15.278 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:15.278 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:15.278 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:15.278 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:15.278 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:15.278 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:15.278 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:15.278 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:15.278 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:15.278 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:15.278 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 12 (relid=16389)
+2025-11-28 08:53:15.278 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:15.279 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:15.279 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:15.782 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:15.782 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:15.782 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:15.782 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:15.782 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:15.782 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:15.782 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:15.782 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:15.782 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:15.782 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:15.782 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 13 (relid=16389)
+2025-11-28 08:53:15.782 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:15.783 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:15.783 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:17.172 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:17.172 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:17.172 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:17.172 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:17.172 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:17.172 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:17.172 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:17.172 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:17.172 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:17.172 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:17.172 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 14 (relid=16389)
+2025-11-28 08:53:17.172 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:17.172 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:17.172 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:17.801 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:17.801 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:17.802 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:17.802 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:17.802 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:17.802 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:17.802 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:17.802 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:17.802 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:17.802 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:17.802 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 15 (relid=16389)
+2025-11-28 08:53:17.802 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:17.803 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:17.803 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:18.457 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:18.457 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:18.457 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:18.457 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:18.457 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:18.457 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:18.457 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:18.457 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:18.457 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:18.457 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:18.457 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 16 (relid=16389)
+2025-11-28 08:53:18.457 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:18.458 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:18.458 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:19.020 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:19.020 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:19.020 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:19.020 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:19.020 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:19.020 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:19.020 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:19.020 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:19.020 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:19.020 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:19.020 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 17 (relid=16389)
+2025-11-28 08:53:19.020 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:19.021 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:19.021 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:19.528 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:19.528 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:19.528 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:19.528 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:19.528 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:19.528 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:19.528 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:19.528 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:19.528 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:19.528 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:19.528 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 18 (relid=16389)
+2025-11-28 08:53:19.528 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:19.529 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:19.529 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:20.007 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:20.007 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:20.007 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:20.007 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:20.007 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:20.007 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:20.007 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:20.007 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:20.007 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:20.007 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:20.007 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 19 (relid=16389)
+2025-11-28 08:53:20.007 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:20.007 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:20.007 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:20.523 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:20.523 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:20.523 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:20.523 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:20.524 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:20.524 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:20.524 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:20.524 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:20.524 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:20.524 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:20.524 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 20 (relid=16389)
+2025-11-28 08:53:20.524 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:20.525 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:20.525 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:21.013 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:21.013 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:21.013 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:21.013 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:21.013 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:21.013 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:21.013 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:21.013 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:21.013 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:21.013 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:21.013 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 21 (relid=16389)
+2025-11-28 08:53:21.013 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:21.014 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:21.014 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:21.571 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:21.571 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:21.572 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:21.572 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:21.572 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:21.572 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:21.572 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:21.572 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:21.572 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:21.572 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:21.572 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 22 (relid=16389)
+2025-11-28 08:53:21.572 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:21.572 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:21.572 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:22.050 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:22.050 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:22.050 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:22.050 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:22.050 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:22.050 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:22.050 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:22.050 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:22.050 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:22.050 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:22.050 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 23 (relid=16389)
+2025-11-28 08:53:22.050 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:22.051 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:22.051 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:22.574 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:22.574 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:22.574 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:22.574 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:22.574 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:22.574 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:22.575 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:22.575 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:22.575 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:22.575 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:22.575 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 24 (relid=16389)
+2025-11-28 08:53:22.575 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:22.576 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:22.576 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:23.738 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:23.738 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:23.738 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:23.738 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:23.738 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:23.738 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:23.738 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:23.738 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:23.738 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:23.738 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:23.738 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 25 (relid=16389)
+2025-11-28 08:53:23.738 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:23.739 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:23.739 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:24.257 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:24.257 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:24.257 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:24.257 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:24.257 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:24.257 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:24.257 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:24.257 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:24.257 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:24.257 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:24.257 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 26 (relid=16389)
+2025-11-28 08:53:24.257 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:24.258 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:24.258 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:24.711 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:24.711 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:24.711 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:24.711 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:24.711 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:24.711 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:24.711 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:24.711 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:24.711 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:24.711 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:24.711 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 27 (relid=16389)
+2025-11-28 08:53:24.711 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:24.712 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:24.712 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:25.187 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:25.187 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:25.187 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:25.187 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:25.187 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:25.187 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:25.187 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:25.187 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:25.187 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:25.187 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:25.187 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 28 (relid=16389)
+2025-11-28 08:53:25.187 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:25.188 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:25.188 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:25.611 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:25.611 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:25.611 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:25.611 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:25.611 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:25.611 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:25.611 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:25.611 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:25.611 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:25.611 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:25.611 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 29 (relid=16389)
+2025-11-28 08:53:25.611 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:25.612 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:25.612 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:26.072 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:26.072 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:26.073 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:26.073 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:26.073 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:26.073 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:26.073 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:26.073 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:26.073 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:26.073 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:26.073 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 30 (relid=16389)
+2025-11-28 08:53:26.073 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:26.073 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:26.073 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:26.567 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:26.567 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:26.567 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:26.567 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:26.568 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:26.568 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:26.568 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:26.568 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:26.568 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:26.568 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:26.568 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 31 (relid=16389)
+2025-11-28 08:53:26.568 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:26.569 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:26.569 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:27.164 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:27.164 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:27.165 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:27.165 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:27.165 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:27.165 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:27.165 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:27.165 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:27.165 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:27.165 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:27.165 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 32 (relid=16389)
+2025-11-28 08:53:27.165 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:27.166 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:27.166 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:27.642 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:27.642 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:27.642 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:27.642 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:27.642 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:27.642 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:27.643 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:27.643 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:27.643 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:27.643 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:27.643 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 33 (relid=16389)
+2025-11-28 08:53:27.643 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:27.644 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:27.644 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:28.148 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:28.148 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:28.148 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:28.148 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:28.148 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:28.148 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:28.148 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:28.148 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:28.148 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:28.148 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:28.148 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 34 (relid=16389)
+2025-11-28 08:53:28.148 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:28.148 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:28.148 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:28.518 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:28.518 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:28.518 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:28.518 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:28.518 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:28.518 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:28.518 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:28.518 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:28.518 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:28.518 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:28.518 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 35 (relid=16389)
+2025-11-28 08:53:28.518 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:28.519 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:28.519 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:28.991 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:28.991 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:28.991 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:28.991 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:28.991 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:28.991 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:28.991 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:28.991 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:28.991 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:28.991 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:28.991 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 36 (relid=16389)
+2025-11-28 08:53:28.991 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:28.992 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:28.992 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:29.432 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:29.432 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:29.432 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:29.432 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:29.432 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:29.432 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:29.432 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:29.432 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:29.433 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:29.433 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:29.433 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 37 (relid=16389)
+2025-11-28 08:53:29.433 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:29.434 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:29.434 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:30.183 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:30.183 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:30.184 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:30.184 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:30.184 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:30.184 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:30.184 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:30.184 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:30.184 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:30.184 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:30.184 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 38 (relid=16389)
+2025-11-28 08:53:30.184 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:30.185 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:30.185 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:30.677 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:30.677 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:30.677 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:30.677 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:30.677 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:30.677 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:30.678 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:30.678 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:30.678 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:30.678 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:30.678 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 39 (relid=16389)
+2025-11-28 08:53:30.678 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:30.678 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:30.678 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:31.123 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:31.123 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:31.124 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:31.124 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:31.124 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:31.124 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:31.124 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:31.124 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:31.124 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:31.124 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:31.124 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 40 (relid=16389)
+2025-11-28 08:53:31.124 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:31.125 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:31.125 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:32.566 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:32.566 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:32.566 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:32.566 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:32.566 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:32.566 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:32.566 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:32.566 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:32.566 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:32.566 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:32.566 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 41 (relid=16389)
+2025-11-28 08:53:32.566 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:32.567 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:32.567 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:33.352 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:33.352 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:33.352 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:33.352 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:33.352 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:33.352 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:33.352 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:33.352 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:33.352 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:33.352 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:33.352 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 42 (relid=16389)
+2025-11-28 08:53:33.352 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:33.352 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:33.352 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:33.721 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:33.721 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:33.721 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:33.721 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:33.721 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:33.721 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:33.721 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:33.721 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:33.721 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:33.721 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:33.721 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 43 (relid=16389)
+2025-11-28 08:53:33.721 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:33.722 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:33.722 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:34.068 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:34.068 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:34.068 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:34.068 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:34.068 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:34.068 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:34.068 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:34.068 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:34.068 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:34.068 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:34.069 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 44 (relid=16389)
+2025-11-28 08:53:34.069 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:34.069 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:34.069 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:34.500 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:34.500 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:34.500 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:34.500 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:34.500 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:34.500 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:34.500 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:34.500 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:34.500 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:34.500 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:34.500 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 45 (relid=16389)
+2025-11-28 08:53:34.500 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:34.501 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:34.501 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:35.277 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:35.277 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:35.277 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:35.277 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:35.277 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:35.277 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:35.278 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:35.278 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:35.278 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:35.278 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:35.278 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 46 (relid=16389)
+2025-11-28 08:53:35.278 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:35.279 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:35.279 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:35.717 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:35.717 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:35.718 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:35.718 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:35.718 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:35.718 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:35.718 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:35.718 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:35.718 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:35.718 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:35.718 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 47 (relid=16389)
+2025-11-28 08:53:35.718 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:35.718 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:35.718 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:36.130 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:36.130 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:36.131 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:36.131 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:36.131 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:36.131 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:36.131 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:36.131 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:36.131 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:36.131 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:36.131 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 48 (relid=16389)
+2025-11-28 08:53:36.131 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:36.132 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:36.132 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:36.492 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:36.492 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:36.492 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:36.492 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:36.493 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:36.493 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:36.493 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:36.493 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:36.493 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:36.493 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:36.493 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 49 (relid=16389)
+2025-11-28 08:53:36.493 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:36.494 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:36.494 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:36.933 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:36.933 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:36.934 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:36.934 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:36.934 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:36.934 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:36.934 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:36.934 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:36.934 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:36.934 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:36.934 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 50 (relid=16389)
+2025-11-28 08:53:36.934 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:36.935 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:36.935 IST [79489] STATEMENT:  select * from users where name='User500'
+	;
+2025-11-28 08:53:45.024 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:45.024 IST [79489] STATEMENT:  select * from users where name like 'User500'
+	;
+2025-11-28 08:53:45.024 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:45.024 IST [79489] STATEMENT:  select * from users where name like 'User500'
+	;
+2025-11-28 08:53:45.024 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:45.024 IST [79489] STATEMENT:  select * from users where name like 'User500'
+	;
+2025-11-28 08:53:45.024 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:45.024 IST [79489] STATEMENT:  select * from users where name like 'User500'
+	;
+2025-11-28 08:53:45.024 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:45.024 IST [79489] STATEMENT:  select * from users where name like 'User500'
+	;
+2025-11-28 08:53:45.024 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 51 (relid=16389)
+2025-11-28 08:53:45.024 IST [79489] STATEMENT:  select * from users where name like 'User500'
+	;
+2025-11-28 08:53:45.026 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:45.026 IST [79489] STATEMENT:  select * from users where name like 'User500'
+	;
+2025-11-28 08:53:47.849 IST [79489] LOG:  AutoIndex: SeqScan: analyzing qual conditions on users (relid=16389, num_clauses=1)
+2025-11-28 08:53:47.849 IST [79489] STATEMENT:  select * from users where name like 'User500'
+	;
+2025-11-28 08:53:47.849 IST [79489] LOG:  AutoIndex: SeqScan: found candidate attr: varattno=2 on users
+2025-11-28 08:53:47.849 IST [79489] STATEMENT:  select * from users where name like 'User500'
+	;
+2025-11-28 08:53:47.849 IST [79489] LOG:  AutoIndex: SeqScan: tracking 1 candidate attr(s) for users (relid=16389)
+2025-11-28 08:53:47.849 IST [79489] STATEMENT:  select * from users where name like 'User500'
+	;
+2025-11-28 08:53:47.849 IST [79489] LOG:  AutoIndex: TrackIndexCandidate called: relid=16389, num_attrs=1
+2025-11-28 08:53:47.849 IST [79489] STATEMENT:  select * from users where name like 'User500'
+	;
+2025-11-28 08:53:47.849 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: sorted attrs=[2]
+2025-11-28 08:53:47.849 IST [79489] STATEMENT:  select * from users where name like 'User500'
+	;
+2025-11-28 08:53:47.849 IST [79489] LOG:  AutoIndex: TrackIndexCandidate: EXISTING candidate found, frequency incremented to 52 (relid=16389)
+2025-11-28 08:53:47.849 IST [79489] STATEMENT:  select * from users where name like 'User500'
+	;
+2025-11-28 08:53:47.850 IST [79489] LOG:  AutoIndex: SeqScan finished on relation users
+2025-11-28 08:53:47.850 IST [79489] STATEMENT:  select * from users where name like 'User500'
+	;

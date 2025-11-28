@@ -174,29 +174,42 @@ ExecInitSeqScan(SeqScan *node, EState *estate, int eflags)
 		ExecInitQual(node->scan.plan.qual, (PlanState *) scanstate);
 
 
-		// if there are any conditions 
+		// if there are any conditions
 	if (node->scan.plan.qual) {
 
 		// we will have multiple attributes to support composite index
 		List *candidate_attrs = NIL;
+		const char *relname = RelationGetRelationName(scanstate->ss.ss_currentRelation);
+		Oid relid = scanstate->ss.ss_currentRelation->rd_id;
 
 		// we will be iterating over all the conditions
 		List *clauses = node->scan.plan.qual;
 		ListCell *lc;
+		int clause_count = 0;
+		int qual_count = list_length(clauses);
+
+		AUTO_INDEX_LOG("SeqScan: analyzing qual conditions on %s (relid=%u, num_clauses=%d)",
+					   relname, relid, qual_count);
 
 		foreach(lc, clauses) {
 			Expr *clause = (Expr *) lfirst(lc);
+			clause_count++;
+
 			if (IsA(clause, OpExpr)) { // for operator expressions
 				OpExpr *op = (OpExpr *) clause;
 				List *args = op->args;
+
+				AUTO_INDEX_LOG_DEBUG("SeqScan: clause[%d] is OpExpr with %d args",
+									clause_count, list_length(args));
+
 				if (list_length(args) == 2) { // (support only two args like age = 30, not 'age BETWEEN 20 AND 30')
-					
+
 					// can be a variable or a constant, we don't know
 					Node *left = (Node *) linitial(args);
 
 					Node *right = (Node *) lsecond(args);
 					Var *var = NULL;
-					
+
 					// whichever is var
 					if (IsA(left, Var)) var = (Var *) left;
 					else if (IsA(right, Var)) var = (Var *) right;
@@ -204,15 +217,32 @@ ExecInitSeqScan(SeqScan *node, EState *estate, int eflags)
 					if (var) {
 						// add this to candidate attrs
 						candidate_attrs = lappend_int(candidate_attrs, var->varattno);
+						AUTO_INDEX_LOG("SeqScan: found candidate attr: varattno=%d on %s",
+									  var->varattno, relname);
+					} else {
+						AUTO_INDEX_LOG_DEBUG("SeqScan: clause[%d] no Var found", clause_count);
 					}
+				} else {
+					AUTO_INDEX_LOG_DEBUG("SeqScan: clause[%d] skipped (args != 2)", clause_count);
 				}
+			} else {
+				AUTO_INDEX_LOG_DEBUG("SeqScan: clause[%d] is not OpExpr (type=%d)",
+									clause_count, nodeTag(clause));
 			}
 		}
 
 		if (candidate_attrs != NIL) {
+			int num_attrs = list_length(candidate_attrs);
+			AUTO_INDEX_LOG("SeqScan: tracking %d candidate attr(s) for %s (relid=%u)",
+						  num_attrs, relname, relid);
 			// sends to shared memory and increment freq
-			TrackIndexCandidate(scanstate->ss.ss_currentRelation->rd_id, candidate_attrs);
+			TrackIndexCandidate(relid, candidate_attrs);
+		} else {
+			AUTO_INDEX_LOG("SeqScan: no indexable candidates found for %s", relname);
 		}
+	} else {
+		AUTO_INDEX_LOG_DEBUG("SeqScan: no qual conditions on %s",
+							RelationGetRelationName(scanstate->ss.ss_currentRelation));
 	}
 
 	return scanstate;
@@ -241,7 +271,7 @@ ExecEndSeqScan(SeqScanState *node)
 		table_endscan(scanDesc);
 
 	if (node->ss.ss_currentRelation)
-		elog(LOG, "SeqScan finished on relation %s",
+		AUTO_INDEX_LOG("SeqScan finished on relation %s",
 			 RelationGetRelationName(node->ss.ss_currentRelation));
 }
 
